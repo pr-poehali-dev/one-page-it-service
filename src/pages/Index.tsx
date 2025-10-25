@@ -142,61 +142,22 @@ const Index = () => {
 
       <section id="contact" className="py-32 relative">
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Свяжитесь с нами
             </h2>
-            <p className="text-center text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              Расскажите о вашем проекте, и мы предложим оптимальное решение
+            <p className="text-xl text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              Написать нам в ВК
             </p>
-            <form onSubmit={handleSubmit} className="space-y-6 bg-card border border-border rounded-2xl p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Ваше имя
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="Иван Иванов"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  className="bg-background"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="email@example.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  className="bg-background"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Сообщение
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Расскажите о вашем проекте..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
-                  rows={5}
-                  className="bg-background resize-none"
-                />
-              </div>
-              <Button type="submit" size="lg" className="w-full">
-                Отправить сообщение
-                <Icon name="Send" className="ml-2" size={18} />
-              </Button>
-            </form>
+            <Button 
+              size="lg" 
+              className="animate-fade-in text-lg px-12 py-6" 
+              style={{ animationDelay: '0.2s' }}
+              onClick={() => window.open('https://vk.com', '_blank')}
+            >
+              Перейти
+              <Icon name="ExternalLink" className="ml-2" size={20} />
+            </Button>
           </div>
         </div>
       </section>
