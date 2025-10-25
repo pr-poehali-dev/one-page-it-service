@@ -162,7 +162,7 @@ const Index = () => {
 
       <footer className="py-12 border-t border-border relative z-10">
         <div className="container mx-auto px-6 text-center text-muted-foreground">
-          <p>&copy; 2024 IT.DEV. Все права защищены.</p>
+          <p>© 2025 IT Kopy. Все права защищены.</p>
         </div>
       </footer>
     </div>
