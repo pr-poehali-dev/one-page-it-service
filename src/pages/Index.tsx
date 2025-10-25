@@ -144,9 +144,12 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Свяжитесь с нами
             </h2>
-            <p className="text-xl text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <p className="text-xl text-muted-foreground mb-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
               Написать нам в ВК
             </p>
+            <div className="flex flex-col items-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.15s' }}>
+              <Icon name="ArrowDown" size={32} className="text-primary animate-bounce" />
+            </div>
             <Button 
               size="lg" 
               className="animate-fade-in text-lg px-12 py-6" 
