@@ -129,10 +129,14 @@ const Index = () => {
             {products.map((product, index) => (
               <Card 
                 key={product.id}
-                className="group hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30 animate-fade-in overflow-hidden"
+                className="group hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30 animate-fade-in overflow-hidden relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                
+                <div className="absolute -right-8 -bottom-8 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                  <Icon name={product.icon} size={200} className="text-primary" />
+                </div>
                 
                 <CardHeader className="relative z-10">
                   <div className="flex items-start justify-between mb-2">
