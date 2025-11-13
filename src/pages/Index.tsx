@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -11,6 +12,7 @@ import {
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const navigate = useNavigate();
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -26,7 +28,8 @@ const Index = () => {
       description: "Быстрые займы на выгодных условиях. Одобрение за 5 минут.",
       icon: "Wallet",
       features: ["До 100 000 ₽", "Без справок", "На карту моментально"],
-      gradient: "from-red-600/20 to-red-700/20"
+      gradient: "from-red-600/20 to-red-700/20",
+      link: "/mfo"
     },
     {
       id: 2,
@@ -35,7 +38,8 @@ const Index = () => {
       description: "Подборка выгодных предложений от ведущих банков России.",
       icon: "CreditCard",
       features: ["0% на 100 дней", "Кэшбэк до 30%", "Без годового обслуживания"],
-      gradient: "from-red-500/20 to-red-600/20"
+      gradient: "from-red-500/20 to-red-600/20",
+      link: "/cards"
     },
     {
       id: 3,
@@ -44,7 +48,8 @@ const Index = () => {
       description: "Открытие счета для бизнеса с удобным онлайн-банкингом.",
       icon: "Building2",
       features: ["Открытие за 1 день", "Низкие тарифы", "Бесплатные переводы"],
-      gradient: "from-red-700/20 to-red-800/20"
+      gradient: "from-red-700/20 to-red-800/20",
+      link: "/rko"
     },
     {
       id: 4,
@@ -53,7 +58,8 @@ const Index = () => {
       description: "Помощь в открытии и ведении индивидуального предпринимательства.",
       icon: "FileText",
       features: ["Под ключ", "Онлайн консультация", "Помощь бухгалтера"],
-      gradient: "from-red-800/20 to-red-900/20"
+      gradient: "from-red-800/20 to-red-900/20",
+      link: "/ip"
     }
   ];
 
@@ -141,7 +147,10 @@ const Index = () => {
                     ))}
                   </div>
                   
-                  <Button className="w-full group-hover:shadow-md group-hover:shadow-primary/20 transition-shadow">
+                  <Button 
+                    className="w-full group-hover:shadow-md group-hover:shadow-primary/20 transition-shadow"
+                    onClick={() => navigate(product.link)}
+                  >
                     Подробно
                   </Button>
                 </CardContent>
