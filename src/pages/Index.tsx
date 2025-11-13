@@ -305,10 +305,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                <Icon name="Landmark" size={24} className="text-primary" />
-                ФинНавигатор
-              </h3>
+              <h3 className="font-bold text-lg mb-4 flex items-center gap-2">ФиНавигатор</h3>
               <p className="text-sm text-muted-foreground">
                 Ваш надежный помощник в мире финансов
               </p>
