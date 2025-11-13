@@ -85,7 +85,7 @@ const Index = () => {
                 Выбрать продукт
                 <Icon name="ArrowDown" className="ml-2" size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6" onClick={() => window.open('https://vk.com/dinero228', '_blank')}>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" onClick={() => scrollToSection('contact')}>
                 Консультация
                 <Icon name="MessageCircle" className="ml-2" size={20} />
               </Button>
@@ -196,7 +196,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 relative overflow-hidden">
+      <section id="contact" className="py-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-red-800/10" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         
@@ -258,6 +258,22 @@ const Index = () => {
               <div className="flex-1">
                 <div className="font-semibold">Написать ВКонтакте</div>
                 <div className="text-sm text-muted-foreground">Быстрый ответ</div>
+              </div>
+              <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
+            </a>
+            
+            <a
+              href="https://t.me/helper1338"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
+            >
+              <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                <Icon name="Send" size={24} className="text-primary" />
+              </div>
+              <div className="flex-1">
+                <div className="font-semibold">Написать в Telegram</div>
+                <div className="text-sm text-muted-foreground">Онлайн 24/7</div>
               </div>
               <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
             </a>
