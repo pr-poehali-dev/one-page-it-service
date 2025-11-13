@@ -95,8 +95,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-6 md:py-32 mt-20 pb-32">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[150px] bg-red-700/30" />
+        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-orange-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+        <div className="absolute top-20 right-1/4 w-[300px] h-[300px] bg-yellow-500/5 rounded-full blur-2xl" />
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-6 animate-fade-in">
@@ -105,18 +107,18 @@ const Index = () => {
               <span className="text-sm font-medium text-primary">Финансовые решения</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">ФиНавигатор</h1>
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent animate-gradient">ФиНавигатор</h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Подбираем лучшие финансовые продукты для бизнеса и личных целей
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/20" onClick={() => scrollToSection('products')}>
+              <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all hover:scale-105" onClick={() => scrollToSection('products')}>
                 Выбрать продукт
                 <Icon name="ArrowDown" className="ml-2" size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6" onClick={() => scrollToSection('contact')}>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 hover:bg-primary/10 hover:scale-105 transition-all" onClick={() => scrollToSection('contact')}>
                 Консультация
                 <Icon name="MessageCircle" className="ml-2" size={20} />
               </Button>
@@ -128,6 +130,8 @@ const Index = () => {
       {/* Products Grid */}
       <section id="products" className="py-20 px-6 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-red-700/5 via-background to-background -z-10" />
+        <div className="absolute top-40 right-10 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-3xl" />
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
