@@ -336,7 +336,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">© 2025 ФинНавигатор. Все права защищены</div>
+          <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">© 2025 ФиНавигатор. Все права защищены</div>
         </div>
       </footer>
     </div>
