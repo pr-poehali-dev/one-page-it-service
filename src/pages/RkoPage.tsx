@@ -68,7 +68,7 @@ const RkoPage = () => {
                 fee: "0 ₽/мес",
                 opening: "1 день",
                 features: ["Для ИП и ООО", "Интернет-банк", "Интеграция с 1С"],
-                image: ""
+                image: "https://cdn.poehali.dev/files/52a2a5ff-b7a6-458d-802d-6acf2f2f3e03.png"
               },
               { 
                 name: "Газпром Бизнес",
