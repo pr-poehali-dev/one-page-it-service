@@ -203,6 +203,7 @@ const Index = () => {
               size="lg" 
               className="animate-fade-in text-lg px-12 py-6 shadow-xl shadow-primary/20" 
               style={{ animationDelay: '0.2s' }}
+              onClick={() => window.open('tel:+79332304495')}
             >
               Связаться с нами
               <Icon name="Phone" className="ml-2" size={20} />
