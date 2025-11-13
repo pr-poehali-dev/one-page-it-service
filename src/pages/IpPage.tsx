@@ -12,12 +12,12 @@ const IpPage = () => {
   const banks = [
     {
       name: "Альфа-Банк",
-      logo: "https://cdn.poehali.dev/files/52a2a5ff-b7a6-458d-802d-6acf2f2f3e03.png",
+      logo: "https://cdn.poehali.dev/files/8d87d572-bb72-452c-ba1c-351780259352.png",
       description: "Регистрация ИП + РКО бесплатно"
     },
     {
       name: "Т-Банк",
-      logo: "https://cdn.poehali.dev/files/fbcf16ba-71c9-4f34-b4b7-249f25971855.png",
+      logo: "https://cdn.poehali.dev/files/bbaa498e-4f4e-41fc-85c2-1600821b2406.png",
       description: "Регистрация ИП + РКО бесплатно"
     },
     {
