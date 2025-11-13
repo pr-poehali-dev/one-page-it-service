@@ -92,7 +92,7 @@ const Index = () => {
               <span className="text-sm font-medium text-primary">Финансовые решения</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">ФинНавигатор</h1>
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">ФиНавигатор</h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Подбираем лучшие финансовые продукты для бизнеса и личных целей
