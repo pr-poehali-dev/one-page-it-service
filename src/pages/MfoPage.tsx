@@ -21,7 +21,7 @@ const MfoPage = () => {
       rate: "От 0.8%",
       term: "До 126 дней",
       features: ["Онлайн оформление", "На карту любого банка", "Лояльные условия"],
-      image: ""
+      image: "https://cdn.poehali.dev/files/595aac20-943e-479a-8906-ff32ce615da5.jpg"
     },
     {
       name: "Займер",
