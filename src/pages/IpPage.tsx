@@ -22,7 +22,7 @@ const IpPage = () => {
     },
     {
       name: "Точка Банк",
-      logo: "https://cdn.poehali.dev/files/092dce40-60e9-4c0e-bb07-665abb0c5634.png",
+      logo: "https://cdn.poehali.dev/files/5663aad1-fbed-467d-a957-937c1f3c002b.png",
       description: "Регистрация ИП + РКО бесплатно"
     }
   ];
