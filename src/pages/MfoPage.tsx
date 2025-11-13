@@ -29,7 +29,7 @@ const MfoPage = () => {
       rate: "От 0%",
       term: "До 30 дней",
       features: ["Без отказа", "Круглосуточно", "Моментальное одобрение"],
-      image: ""
+      image: "https://cdn.poehali.dev/files/779fdcf4-f436-4483-9c28-a7fc21a21c53.png"
     }
   ];
 
