@@ -65,8 +65,22 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header with Logo */}
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="text-2xl font-bold text-primary">ФинНавигатор</div>
+            <nav className="hidden md:flex items-center gap-6">
+              <Button variant="ghost" onClick={() => scrollToSection('products')}>Продукты</Button>
+              <Button variant="ghost" onClick={() => scrollToSection('about')}>О нас</Button>
+              <Button onClick={() => scrollToSection('contact')}>Контакты</Button>
+            </nav>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-6 md:py-32">
+      <section className="relative overflow-hidden py-20 px-6 md:py-32 mt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-700/10 rounded-full blur-3xl" />
