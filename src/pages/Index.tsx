@@ -83,7 +83,7 @@ const Index = () => {
             <div className="flex flex-wrap gap-4 justify-center pt-4">
               <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/20" onClick={() => scrollToSection('products')}>
                 Выбрать продукт
-                <Icon name="ArrowRight" className="ml-2" size={20} />
+                <Icon name="ArrowDown" className="ml-2" size={20} />
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6" onClick={() => window.open('https://vk.com/dinero228', '_blank')}>
                 Консультация
