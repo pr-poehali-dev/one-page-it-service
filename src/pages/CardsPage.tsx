@@ -56,9 +56,7 @@ const CardsPage = () => {
             <span className="text-sm font-medium text-primary">Кредитные карты</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Лучшие кредитные карты 2024
-          </h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Лучшие кредитные карты 2025</h1>
           
           <p className="text-xl text-muted-foreground mb-8">
             Выгодные условия, высокий кэшбэк и длительный льготный период
