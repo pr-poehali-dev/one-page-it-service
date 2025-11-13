@@ -29,7 +29,7 @@ const CardsPage = () => {
       grace: "120 дней",
       limit: "До 600 000 ₽",
       features: ["Бонусы СберСпасибо", "Без годовой платы", "Защита покупок"],
-      image: ""
+      image: "https://cdn.poehali.dev/files/7c00afb4-418c-480f-b56e-b9b408bf368a.jpg"
     }
   ];
 
