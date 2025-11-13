@@ -85,16 +85,16 @@ const RkoPage = () => {
                 image: "https://cdn.poehali.dev/files/092dce40-60e9-4c0e-bb07-665abb0c5634.png"
               }
             ].map((bank, index) => (
-              <Card key={index} className="hover:border-primary/50 transition-colors">
+              <Card key={index} className="hover:border-primary/50 transition-colors flex flex-col">
                 {bank.image && (
-                  <div className="w-full">
-                    <img src={bank.image} alt={bank.name} className="w-full h-auto rounded-t-lg" />
+                  <div className="w-full h-48 overflow-hidden">
+                    <img src={bank.image} alt={bank.name} className="w-full h-full object-cover rounded-t-lg" />
                   </div>
                 )}
                 <CardHeader>
                   <CardTitle className="text-2xl">{bank.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 flex-1">
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Обслуживание:</span>
