@@ -64,7 +64,19 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Background Decorative Icons */}
+      <div className="fixed inset-0 pointer-events-none opacity-[0.02] z-0">
+        <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
+        <Icon name="TrendingUp" size={100} className="absolute top-40 right-20 text-primary -rotate-12" />
+        <Icon name="Wallet" size={90} className="absolute bottom-60 left-1/4 text-primary rotate-45" />
+        <Icon name="CreditCard" size={110} className="absolute top-1/3 right-1/3 text-primary -rotate-6" />
+        <Icon name="PiggyBank" size={95} className="absolute bottom-40 right-20 text-primary rotate-12" />
+        <Icon name="CircleDollarSign" size={85} className="absolute top-2/3 left-16 text-primary -rotate-12" />
+        <Icon name="Coins" size={75} className="absolute bottom-20 left-1/2 text-primary rotate-6" />
+        <Icon name="Landmark" size={105} className="absolute top-1/2 right-12 text-primary rotate-12" />
+      </div>
+      
       {/* Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container mx-auto px-6 py-4">
