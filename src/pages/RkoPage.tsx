@@ -75,7 +75,7 @@ const RkoPage = () => {
                 fee: "0 ₽/мес",
                 opening: "1 день",
                 features: ["Для ИП и ООО", "Мобильное приложение", "Кэшбэк за переводы"],
-                image: ""
+                image: "https://cdn.poehali.dev/files/a503082d-e162-4a1d-bf04-4e7e20e17476.jpg"
               },
               { 
                 name: "Точка Банк",
