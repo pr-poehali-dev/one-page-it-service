@@ -26,7 +26,7 @@ const Index = () => {
       description: "Быстрые займы на выгодных условиях. Одобрение за 5 минут.",
       icon: "Wallet",
       features: ["До 100 000 ₽", "Без справок", "На карту моментально"],
-      gradient: "from-blue-500/20 to-blue-600/20"
+      gradient: "from-red-600/20 to-red-700/20"
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const Index = () => {
       description: "Подборка выгодных предложений от ведущих банков России.",
       icon: "CreditCard",
       features: ["0% на 100 дней", "Кэшбэк до 30%", "Без годового обслуживания"],
-      gradient: "from-cyan-500/20 to-blue-500/20"
+      gradient: "from-red-500/20 to-red-600/20"
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ const Index = () => {
       description: "Открытие счета для бизнеса с удобным онлайн-банкингом.",
       icon: "Building2",
       features: ["Открытие за 1 день", "Низкие тарифы", "Бесплатные переводы"],
-      gradient: "from-indigo-500/20 to-blue-600/20"
+      gradient: "from-red-700/20 to-red-800/20"
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const Index = () => {
       description: "Помощь в открытии и ведении индивидуального предпринимательства.",
       icon: "FileText",
       features: ["Под ключ", "Онлайн консультация", "Помощь бухгалтера"],
-      gradient: "from-blue-600/20 to-indigo-500/20"
+      gradient: "from-red-800/20 to-red-900/20"
     }
   ];
 
@@ -61,9 +61,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-6 md:py-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-background to-background" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-700/10 rounded-full blur-3xl" />
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-6 animate-fade-in">
@@ -197,7 +197,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="py-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-cyan-600/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-red-800/10" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         
         <div className="container mx-auto max-w-4xl relative z-10 text-center space-y-6">
