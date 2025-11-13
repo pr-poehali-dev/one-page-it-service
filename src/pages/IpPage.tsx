@@ -18,12 +18,12 @@ const IpPage = () => {
     {
       name: "Т-Банк",
       logo: "https://cdn.poehali.dev/files/fbcf16ba-71c9-4f34-b4b7-249f25971855.png",
-      description: "Быстрая регистрация за 1 день"
+      description: "Регистрация ИП + РКО бесплатно"
     },
     {
       name: "Точка Банк",
       logo: "https://cdn.poehali.dev/files/092dce40-60e9-4c0e-bb07-665abb0c5634.png",
-      description: "Открытие счета со скидкой 80%"
+      description: "Регистрация ИП + РКО бесплатно"
     }
   ];
 
