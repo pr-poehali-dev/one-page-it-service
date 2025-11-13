@@ -58,38 +58,67 @@ const RkoPage = () => {
       </section>
 
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold mb-12 text-center">Лучшие банки для открытия РКО</h2>
           
-          <div className="grid gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Расчётный счёт", desc: "Для ведения безналичных расчётов" },
-              { title: "Интернет-банк", desc: "Управление счётом 24/7 онлайн" },
-              { title: "Эквайринг", desc: "Приём платежей по картам" },
-              { title: "Бухгалтерия", desc: "Интеграция с 1С и другими системами" },
-              { title: "Зарплатный проект", desc: "Выплаты сотрудникам" },
-              { title: "Кредитование", desc: "Кредиты для бизнеса" }
-            ].map((item, index) => (
+              { 
+                name: "Альфа Бизнес",
+                fee: "0 ₽/мес",
+                opening: "3-5 дней",
+                features: ["Бесплатное обслуживание", "Интернет-банк", "Интеграция с 1С"],
+                image: ""
+              },
+              { 
+                name: "Т-Бизнес",
+                fee: "0 ₽/мес",
+                opening: "1 день",
+                features: ["Онлайн открытие", "Мобильное приложение", "Кэшбэк за переводы"],
+                image: ""
+              },
+              { 
+                name: "Точка Банк",
+                fee: "0 ₽/мес",
+                opening: "3 дня",
+                features: ["Для ИП и ООО", "Бесплатные переводы", "Поддержка 24/7"],
+                image: ""
+              }
+            ].map((bank, index) => (
               <Card key={index} className="hover:border-primary/50 transition-colors">
+                {bank.image && (
+                  <div className="w-full">
+                    <img src={bank.image} alt={bank.name} className="w-full h-auto rounded-t-lg" />
+                  </div>
+                )}
                 <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Icon name="CheckCircle2" size={24} className="text-primary" />
+                  <CardTitle className="text-2xl">{bank.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Обслуживание:</span>
+                      <span className="font-semibold text-primary">{bank.fee}</span>
                     </div>
-                    <div>
-                      <CardTitle className="mb-2">{item.title}</CardTitle>
-                      <p className="text-muted-foreground">{item.desc}</p>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Открытие:</span>
+                      <span className="font-semibold">{bank.opening}</span>
                     </div>
                   </div>
-                </CardHeader>
+                  
+                  <div className="border-t border-border pt-4 space-y-2">
+                    {bank.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <Icon name="CheckCircle2" size={16} className="text-primary" />
+                        <span className="text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <Button className="w-full">Открыть счёт</Button>
+                </CardContent>
               </Card>
             ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Button size="lg" className="px-12">
-              Открыть расчётный счёт
-            </Button>
           </div>
         </div>
       </section>
