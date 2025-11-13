@@ -65,27 +65,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background Decorative Icons & Images */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="opacity-[0.02]">
-          <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
-          <Icon name="TrendingUp" size={100} className="absolute top-40 right-20 text-primary -rotate-12" />
-          <Icon name="Wallet" size={90} className="absolute bottom-60 left-1/4 text-primary rotate-45" />
-          <Icon name="CreditCard" size={110} className="absolute top-1/3 right-1/3 text-primary -rotate-6" />
-          <Icon name="PiggyBank" size={95} className="absolute bottom-40 right-20 text-primary rotate-12" />
-          <Icon name="CircleDollarSign" size={85} className="absolute top-2/3 left-16 text-primary -rotate-12" />
-          <Icon name="Coins" size={75} className="absolute bottom-20 left-1/2 text-primary rotate-6" />
-          <Icon name="Landmark" size={105} className="absolute top-1/2 right-12 text-primary rotate-12" />
-        </div>
-        
-        <div className="opacity-[0.03]">
-          <img src="https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/0a18ba57-e5ab-47a9-9c65-dcfbad76807b.jpg" alt="" className="absolute top-32 left-1/3 w-24 h-24 rotate-12 object-contain" />
-          <img src="https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/d3df3dd3-36f0-4ec0-af5b-09075b28eba4.jpg" alt="" className="absolute top-1/4 right-1/4 w-28 h-28 -rotate-6 object-contain" />
-          <img src="https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/0a18ba57-e5ab-47a9-9c65-dcfbad76807b.jpg" alt="" className="absolute bottom-1/3 left-20 w-32 h-32 rotate-45 object-contain" />
-          <img src="https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/d3df3dd3-36f0-4ec0-af5b-09075b28eba4.jpg" alt="" className="absolute bottom-1/4 right-1/3 w-20 h-20 -rotate-12 object-contain" />
-          <img src="https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/0a18ba57-e5ab-47a9-9c65-dcfbad76807b.jpg" alt="" className="absolute top-2/3 right-16 w-26 h-26 rotate-6 object-contain" />
-          <img src="https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/d3df3dd3-36f0-4ec0-af5b-09075b28eba4.jpg" alt="" className="absolute top-1/2 left-1/4 w-22 h-22 -rotate-45 object-contain" />
-        </div>
+      {/* Background Decorative Icons */}
+      <div className="fixed inset-0 pointer-events-none opacity-[0.02] z-0">
+        <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
+        <Icon name="TrendingUp" size={100} className="absolute top-40 right-20 text-primary -rotate-12" />
+        <Icon name="Wallet" size={90} className="absolute bottom-60 left-1/4 text-primary rotate-45" />
+        <Icon name="CreditCard" size={110} className="absolute top-1/3 right-1/3 text-primary -rotate-6" />
+        <Icon name="PiggyBank" size={95} className="absolute bottom-40 right-20 text-primary rotate-12" />
+        <Icon name="CircleDollarSign" size={85} className="absolute top-2/3 left-16 text-primary -rotate-12" />
+        <Icon name="Coins" size={75} className="absolute bottom-20 left-1/2 text-primary rotate-6" />
+        <Icon name="Landmark" size={105} className="absolute top-1/2 right-12 text-primary rotate-12" />
       </div>
       
       {/* Header with Logo */}
