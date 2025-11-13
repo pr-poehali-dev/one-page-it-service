@@ -127,6 +127,7 @@ const Index = () => {
 
       {/* Products Grid */}
       <section id="products" className="py-20 px-6 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-red-700/5 via-background to-background -z-10" />
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
