@@ -273,7 +273,7 @@ const Index = () => {
               </div>
               <div className="flex-1">
                 <div className="font-semibold">Написать в Telegram</div>
-                <div className="text-sm text-muted-foreground">Онлайн 24/7</div>
+                <div className="text-sm text-muted-foreground">Онлайн c 8:00 до 22:00 по МСК</div>
               </div>
               <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
             </a>
