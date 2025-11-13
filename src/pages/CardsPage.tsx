@@ -21,7 +21,7 @@ const CardsPage = () => {
       grace: "100 дней",
       limit: "До 500 000 ₽",
       features: ["Кэшбэк рублями", "Доставка за 1 день", "Льготный период"],
-      image: ""
+      image: "https://cdn.poehali.dev/files/e179cae9-7ab6-4797-a936-c611576e8754.png"
     },
     {
       name: "Сбер Кредитная",
