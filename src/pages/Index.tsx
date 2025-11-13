@@ -138,6 +138,14 @@ const Index = () => {
                   <Icon name={product.icon} size={200} className="text-primary" />
                 </div>
                 
+                <div className="absolute -left-6 -top-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-300">
+                  <Icon name={product.icon} size={120} className="text-primary rotate-12" />
+                </div>
+                
+                <div className="absolute right-16 top-8 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-300">
+                  <Icon name={product.icon} size={80} className="text-primary -rotate-12" />
+                </div>
+                
                 <CardHeader className="relative z-10">
                   <div className="flex items-start justify-between mb-2">
                     <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
