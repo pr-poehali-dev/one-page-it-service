@@ -72,7 +72,6 @@ const Index = () => {
             <div className="text-2xl font-bold text-primary">ФиНавигатор</div>
             <nav className="hidden md:flex items-center gap-6">
               <Button variant="ghost" onClick={() => scrollToSection('products')}>Продукты</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('about')}>О нас</Button>
               <Button onClick={() => scrollToSection('contact')}>Контакты</Button>
             </nav>
           </div>
