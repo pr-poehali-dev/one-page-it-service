@@ -39,7 +39,7 @@ const RkoPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-12">
             {[
-              { icon: "Clock", title: "Быстро", desc: "Открытие за 1 день" },
+              { icon: "Clock", title: "Быстро", desc: "Открытие от 3 до 5 дней" },
               { icon: "Percent", title: "Выгодно", desc: "Низкие тарифы" },
               { icon: "Shield", title: "Надёжно", desc: "Лицензированные банки" }
             ].map((item, index) => (
