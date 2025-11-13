@@ -80,7 +80,7 @@ const IpPage = () => {
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full">Выбрать тариф</Button>
+                  <Button className="w-full">Выбрать банк</Button>
                 </CardContent>
               </Card>
             ))}
