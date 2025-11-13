@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -203,7 +213,7 @@ const Index = () => {
               size="lg" 
               className="animate-fade-in text-lg px-12 py-6 shadow-xl shadow-primary/20" 
               style={{ animationDelay: '0.2s' }}
-              onClick={() => window.open('tel:+79332304495')}
+              onClick={() => setIsContactOpen(true)}
             >
               Связаться с нами
               <Icon name="Phone" className="ml-2" size={20} />
@@ -211,6 +221,49 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Dialog */}
+      <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-2xl">Свяжитесь с нами</DialogTitle>
+            <DialogDescription>
+              Выберите удобный способ связи
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 py-4">
+            <a
+              href="tel:+79332304495"
+              className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
+            >
+              <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                <Icon name="Phone" size={24} className="text-primary" />
+              </div>
+              <div className="flex-1">
+                <div className="font-semibold">Позвонить</div>
+                <div className="text-sm text-muted-foreground">+7 (933) 230-44-95</div>
+              </div>
+              <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
+            </a>
+            
+            <a
+              href="https://vk.com/dinero228"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
+            >
+              <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                <Icon name="MessageCircle" size={24} className="text-primary" />
+              </div>
+              <div className="flex-1">
+                <div className="font-semibold">Написать ВКонтакте</div>
+                <div className="text-sm text-muted-foreground">Быстрый ответ</div>
+              </div>
+              <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
+            </a>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-border/50 bg-card/30">
