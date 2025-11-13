@@ -142,8 +142,7 @@ const Index = () => {
                   </div>
                   
                   <Button className="w-full group-hover:shadow-md group-hover:shadow-primary/20 transition-shadow">
-                    Подробнее
-                    <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+                    Подробно
                   </Button>
                 </CardContent>
               </Card>
