@@ -59,7 +59,7 @@ const RkoPage = () => {
 
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold mb-12 text-center">Что входит в РКО</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Лучшие банки для открытия РКО</h2>
           
           <div className="grid gap-6">
             {[
