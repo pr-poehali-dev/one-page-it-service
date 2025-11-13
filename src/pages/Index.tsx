@@ -93,10 +93,10 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-6 md:py-32 mt-20">
+      <section className="relative overflow-hidden py-20 px-6 md:py-32 mt-20 pb-32">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl bg-red-700" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[150px] bg-red-700/30" />
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-6 animate-fade-in">
