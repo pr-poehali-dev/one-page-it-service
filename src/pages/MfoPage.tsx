@@ -8,7 +8,7 @@ const MfoPage = () => {
 
   const offers = [
     {
-      name: "Быстрозайм",
+      name: "Credit7",
       amount: "До 30 000 ₽",
       rate: "От 0%",
       term: "До 30 дней",
