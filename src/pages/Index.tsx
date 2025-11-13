@@ -75,7 +75,7 @@ const Index = () => {
                 Выбрать продукт
                 <Icon name="ArrowRight" className="ml-2" size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" onClick={() => window.open('https://vk.com/dinero228', '_blank')}>
                 Консультация
                 <Icon name="MessageCircle" className="ml-2" size={20} />
               </Button>
