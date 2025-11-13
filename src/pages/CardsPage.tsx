@@ -12,21 +12,24 @@ const CardsPage = () => {
       cashback: "До 30%",
       grace: "120 дней",
       limit: "До 700 000 ₽",
-      features: ["Кэшбэк баллами", "Бесплатное обслуживание", "Снятие без комиссии"]
+      features: ["Кэшбэк баллами", "Бесплатное обслуживание", "Снятие без комиссии"],
+      image: "https://cdn.poehali.dev/files/952e28ea-0eff-4877-928b-835d1aa6bc2e.jpg"
     },
     {
       name: "Альфа-Банк 100 дней",
       cashback: "До 10%",
       grace: "100 дней",
       limit: "До 500 000 ₽",
-      features: ["Кэшбэк рублями", "Доставка за 1 день", "Льготный период"]
+      features: ["Кэшбэк рублями", "Доставка за 1 день", "Льготный период"],
+      image: ""
     },
     {
       name: "Сбер Кредитная",
       cashback: "До 20%",
       grace: "120 дней",
       limit: "До 600 000 ₽",
-      features: ["Бонусы СберСпасибо", "Без годовой платы", "Защита покупок"]
+      features: ["Бонусы СберСпасибо", "Без годовой платы", "Защита покупок"],
+      image: ""
     }
   ];
 
@@ -68,6 +71,11 @@ const CardsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cards.map((card, index) => (
               <Card key={index} className="hover:border-primary/50 transition-colors">
+                {card.image && (
+                  <div className="w-full">
+                    <img src={card.image} alt={card.name} className="w-full h-auto rounded-t-lg" />
+                  </div>
+                )}
                 <CardHeader>
                   <CardTitle className="text-2xl">{card.name}</CardTitle>
                 </CardHeader>
