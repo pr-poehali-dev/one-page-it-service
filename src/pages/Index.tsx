@@ -3,6 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const products = [
     {
       id: 1,
@@ -66,7 +71,7 @@ const Index = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/20">
+              <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/20" onClick={() => scrollToSection('products')}>
                 Выбрать продукт
                 <Icon name="ArrowRight" className="ml-2" size={20} />
               </Button>
@@ -80,7 +85,7 @@ const Index = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20 px-6 relative">
+      <section id="products" className="py-20 px-6 relative">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
