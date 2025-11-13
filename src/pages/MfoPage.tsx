@@ -12,21 +12,24 @@ const MfoPage = () => {
       amount: "До 30 000 ₽",
       rate: "От 0%",
       term: "До 30 дней",
-      features: ["Первый займ под 0%", "Решение за 5 минут", "Без проверки КИ"]
+      features: ["Первый займ под 0%", "Решение за 5 минут", "Без проверки КИ"],
+      image: "https://cdn.poehali.dev/files/b5608183-b577-46c9-9f90-a99a4e14557e.png"
     },
     {
       name: "Moneyman",
       amount: "До 100 000 ₽",
       rate: "От 0.8%",
       term: "До 126 дней",
-      features: ["Онлайн оформление", "На карту любого банка", "Лояльные условия"]
+      features: ["Онлайн оформление", "На карту любого банка", "Лояльные условия"],
+      image: ""
     },
     {
       name: "Займер",
       amount: "До 30 000 ₽",
       rate: "От 0%",
       term: "До 30 дней",
-      features: ["Без отказа", "Круглосуточно", "Моментальное одобрение"]
+      features: ["Без отказа", "Круглосуточно", "Моментальное одобрение"],
+      image: ""
     }
   ];
 
@@ -90,6 +93,11 @@ const MfoPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {offers.map((offer, index) => (
               <Card key={index} className="hover:border-primary/50 transition-colors">
+                {offer.image && (
+                  <div className="w-full">
+                    <img src={offer.image} alt={offer.name} className="w-full h-auto rounded-t-lg" />
+                  </div>
+                )}
                 <CardHeader>
                   <CardTitle className="text-2xl">{offer.name}</CardTitle>
                 </CardHeader>
