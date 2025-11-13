@@ -129,7 +129,7 @@ const Index = () => {
               <span className="text-sm font-medium text-primary">Финансовые решения</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent animate-gradient">ФиНавигатор</h1>
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">ФиНавигатор</h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Подбираем лучшие финансовые продукты для бизнеса и личных целей
@@ -156,7 +156,7 @@ const Index = () => {
         <div className="absolute bottom-20 left-10 w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-3xl" />
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Наши продукты
             </h2>
             <p className="text-xl text-muted-foreground">
@@ -204,7 +204,7 @@ const Index = () => {
                     </span>
                   </div>
                   
-                  <CardTitle className="text-2xl mb-2">{product.title}</CardTitle>
+                  <CardTitle className="text-2xl mb-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">{product.title}</CardTitle>
                   <CardDescription className="text-base">
                     {product.description}
                   </CardDescription>
@@ -238,7 +238,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-gradient-to-b from-background to-card/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Почему выбирают нас
             </h2>
           </div>
@@ -269,7 +269,7 @@ const Index = () => {
                 <div className="inline-flex p-4 rounded-2xl bg-primary/10 border border-primary/20">
                   <Icon name={feature.icon} size={32} className="text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">{feature.title}</h3>
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
               </div>
             ))}
@@ -283,7 +283,7 @@ const Index = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         
         <div className="container mx-auto max-w-4xl relative z-10 text-center space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold animate-fade-in bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             Готовы начать?
           </h2>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: '0.1s' }}>
