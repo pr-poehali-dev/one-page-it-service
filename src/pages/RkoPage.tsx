@@ -82,7 +82,7 @@ const RkoPage = () => {
                 fee: "0 ₽/мес",
                 opening: "1 день",
                 features: ["Для ИП и ООО", "Бесплатные переводы", "Поддержка 24/7"],
-                image: "https://cdn.poehali.dev/files/a4246bb0-5eae-402f-b1ce-dc702ec6412c.png"
+                image: "https://cdn.poehali.dev/files/092dce40-60e9-4c0e-bb07-665abb0c5634.png"
               }
             ].map((bank, index) => (
               <Card key={index} className="hover:border-primary/50 transition-colors">
