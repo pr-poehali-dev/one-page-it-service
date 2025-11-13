@@ -178,28 +178,28 @@ const Index = () => {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <Card 
-                  className="group hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30 overflow-hidden relative h-full"
+                  className="group hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 border-purple-500/30 bg-gradient-to-br from-purple-950/50 to-violet-950/50 backdrop-blur-sm hover:border-purple-400/50 overflow-hidden relative h-full"
                 >
-                <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-violet-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 <div className="absolute -right-8 -bottom-8 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
-                  <Icon name={product.icon} size={200} className="text-primary" />
+                  <Icon name={product.icon} size={200} className="text-purple-400" />
                 </div>
                 
                 <div className="absolute -left-6 -top-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-300">
-                  <Icon name={product.icon} size={120} className="text-primary rotate-12" />
+                  <Icon name={product.icon} size={120} className="text-purple-400 rotate-12" />
                 </div>
                 
                 <div className="absolute right-16 top-8 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-300">
-                  <Icon name={product.icon} size={80} className="text-primary -rotate-12" />
+                  <Icon name={product.icon} size={80} className="text-purple-400 -rotate-12" />
                 </div>
                 
                 <CardHeader className="relative z-10">
                   <div className="flex items-start justify-between mb-2">
-                    <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
-                      <Icon name={product.icon} size={28} className="text-primary" />
+                    <div className="p-3 rounded-xl bg-purple-500/20 border border-purple-400/30 group-hover:bg-purple-500/30 transition-colors">
+                      <Icon name={product.icon} size={28} className="text-purple-400" />
                     </div>
-                    <span className="text-xs font-medium px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground">
+                    <span className="text-xs font-medium px-3 py-1 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300">
                       {product.category}
                     </span>
                   </div>
@@ -214,14 +214,14 @@ const Index = () => {
                   <div className="space-y-2">
                     {product.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2">
-                        <Icon name="CheckCircle2" size={18} className="text-primary flex-shrink-0" />
+                        <Icon name="CheckCircle2" size={18} className="text-purple-400 flex-shrink-0" />
                         <span className="text-sm text-muted-foreground">{feature}</span>
                       </div>
                     ))}
                   </div>
                   
                   <Button 
-                    className="w-full group-hover:shadow-md group-hover:shadow-primary/20 transition-shadow"
+                    className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 group-hover:shadow-md group-hover:shadow-purple-500/30 transition-all border-0"
                     onClick={() => navigate(product.link)}
                   >
                     Подробно
