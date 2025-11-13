@@ -2,9 +2,30 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { useNavigate } from "react-router-dom";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const IpPage = () => {
   const navigate = useNavigate();
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const banks = [
+    {
+      name: "Альфа-Банк",
+      logo: "https://cdn.poehali.dev/files/52a2a5ff-b7a6-458d-802d-6acf2f2f3e03.png",
+      description: "Регистрация ИП + РКО бесплатно"
+    },
+    {
+      name: "Т-Банк",
+      logo: "https://cdn.poehali.dev/files/fbcf16ba-71c9-4f34-b4b7-249f25971855.png",
+      description: "Быстрая регистрация за 1 день"
+    },
+    {
+      name: "Точка Банк",
+      logo: "https://cdn.poehali.dev/files/092dce40-60e9-4c0e-bb07-665abb0c5634.png",
+      description: "Открытие счета со скидкой 80%"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -80,7 +101,7 @@ const IpPage = () => {
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full">Выбрать банк</Button>
+                  <Button className="w-full" onClick={() => setIsDialogOpen(true)}>Выбрать банк</Button>
                 </CardContent>
               </Card>
             ))}
@@ -111,12 +132,37 @@ const IpPage = () => {
           </Card>
 
           <div className="mt-12 text-center">
-            <Button size="lg" className="px-12">
+            <Button size="lg" className="px-12" onClick={() => setIsDialogOpen(true)}>
               Начать регистрацию
             </Button>
           </div>
         </div>
       </section>
+
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl">Выберите банк для регистрации ИП</DialogTitle>
+          </DialogHeader>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            {banks.map((bank, index) => (
+              <Card key={index} className="hover:border-primary transition-colors cursor-pointer">
+                <CardContent className="p-6 space-y-4">
+                  <div className="h-32 flex items-center justify-center">
+                    <img src={bank.logo} alt={bank.name} className="max-w-full max-h-full object-contain" />
+                  </div>
+                  <div className="text-center space-y-2">
+                    <h3 className="font-bold text-lg">{bank.name}</h3>
+                    <p className="text-sm text-muted-foreground">{bank.description}</p>
+                  </div>
+                  <Button className="w-full">Выбрать</Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
