@@ -69,7 +69,9 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-primary">ФиНавигатор</div>
+            <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center text-2xl font-bold text-primary-foreground">
+              F
+            </div>
             <nav className="hidden md:flex items-center gap-6">
               <Button variant="ghost" onClick={() => scrollToSection('products')}>Продукты</Button>
               <Button onClick={() => scrollToSection('contact')}>Контакты</Button>
