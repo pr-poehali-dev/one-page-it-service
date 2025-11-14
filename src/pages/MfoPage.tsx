@@ -9,7 +9,7 @@ const MfoPage = () => {
   const offers = [
     {
       name: "Digcashe",
-      amount: "До 100 000 ₽",
+      amount: "До 75 000 ₽",
       rate: "От 0%",
       term: "До 365 дней",
       features: ["Первый займ под 0%", "Одобрение за 5 минут", "Без справок о доходах"],
