@@ -46,6 +46,14 @@ const MfoPage = () => {
       term: "До 30 дней",
       features: ["Быстрое одобрение", "На карту через 5 минут", "Без проверки кредитной истории"],
       image: "https://cdn.poehali.dev/files/16133f03-525a-4e29-b8f9-ad1507367e45.png"
+    },
+    {
+      name: "Лайм Займ",
+      amount: "До 20 000 ₽",
+      rate: "0%",
+      term: "До 40 дней",
+      features: ["Первый заём бесплатно", "Одобрение за 5 минут", "На карту любого банка"],
+      image: "https://cdn.poehali.dev/files/7a5fd849-9eee-410a-bfb0-53e172c0fd42.png"
     }
   ];
 
