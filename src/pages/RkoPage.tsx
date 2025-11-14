@@ -2,9 +2,32 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 const RkoPage = () => {
   const navigate = useNavigate();
+  const [visibleCards, setVisibleCards] = useState<number[]>([]);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute('data-index') || '0');
+            setVisibleCards((prev) => [...new Set([...prev, index])]);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -85,7 +108,18 @@ const RkoPage = () => {
                 image: "https://cdn.poehali.dev/files/092dce40-60e9-4c0e-bb07-665abb0c5634.png"
               }
             ].map((bank, index) => (
-              <Card key={index} className="hover:border-primary/50 transition-colors flex flex-col">
+              <div
+                key={index}
+                ref={(el) => (cardRefs.current[index] = el)}
+                data-index={index}
+                className={`transform transition-all duration-700 ${
+                  visibleCards.includes(index)
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+              <Card className="hover:border-primary/50 transition-colors flex flex-col h-full">
                 {bank.image && (
                   <div className="w-full h-48 overflow-hidden">
                     <img src={bank.image} alt={bank.name} className="w-full h-full object-cover rounded-t-lg" />
@@ -118,6 +152,7 @@ const RkoPage = () => {
                   <Button className="w-full">Открыть счёт</Button>
                 </CardContent>
               </Card>
+              </div>
             ))}
           </div>
         </div>

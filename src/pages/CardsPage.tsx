@@ -2,9 +2,32 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 const CardsPage = () => {
   const navigate = useNavigate();
+  const [visibleCards, setVisibleCards] = useState<number[]>([]);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute('data-index') || '0');
+            setVisibleCards((prev) => [...new Set([...prev, index])]);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const cards = [
     {
@@ -68,7 +91,18 @@ const CardsPage = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cards.map((card, index) => (
-              <Card key={index} className="hover:border-primary/50 transition-colors">
+              <div
+                key={index}
+                ref={(el) => (cardRefs.current[index] = el)}
+                data-index={index}
+                className={`transform transition-all duration-700 ${
+                  visibleCards.includes(index)
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+              <Card className="hover:border-primary/50 transition-colors h-full">
                 {card.image && (
                   <div className="w-full">
                     <img src={card.image} alt={card.name} className="w-full h-auto rounded-t-lg" />
@@ -105,6 +139,7 @@ const CardsPage = () => {
                   <Button className="w-full">Оформить карту</Button>
                 </CardContent>
               </Card>
+              </div>
             ))}
           </div>
         </div>
