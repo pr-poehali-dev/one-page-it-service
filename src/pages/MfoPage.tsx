@@ -17,6 +17,14 @@ const MfoPage = () => {
       link: "https://digcashe.su/"
     },
     {
+      name: "Кеш UP",
+      amount: "До 50 000 ₽",
+      rate: "От 0%",
+      term: "До 30 дней",
+      features: ["Первый займ бесплатно", "Мгновенное одобрение", "Без скрытых комиссий"],
+      image: "https://cdn.poehali.dev/files/b5608183-b577-46c9-9f90-a99a4e14557e.png"
+    },
+    {
       name: "Credit7",
       amount: "До 30 000 ₽",
       rate: "От 0%",
