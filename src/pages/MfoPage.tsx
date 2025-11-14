@@ -46,6 +46,14 @@ const MfoPage = () => {
       term: "До 30 дней",
       features: ["Без отказа", "Круглосуточно", "Моментальное одобрение"],
       image: "https://cdn.poehali.dev/files/779fdcf4-f436-4483-9c28-a7fc21a21c53.png"
+    },
+    {
+      name: "Макс Кредит",
+      amount: "До 30 000 ₽",
+      rate: "От 0.8%",
+      term: "До 30 дней",
+      features: ["Быстрое одобрение", "На карту через 5 минут", "Без проверки кредитной истории"],
+      image: "https://cdn.poehali.dev/files/16133f03-525a-4e29-b8f9-ad1507367e45.png"
     }
   ];
 
