@@ -19,7 +19,7 @@ const MfoPage = () => {
     {
       name: "Кеш UP",
       amount: "До 75 000 ₽",
-      rate: "От 0%",
+      rate: "От 0.1%",
       term: "До 30 дней",
       features: ["Первый займ бесплатно", "Мгновенное одобрение", "Без скрытых комиссий"],
       image: "https://cdn.poehali.dev/files/83540891-27b0-4c6b-a6dd-88b6c95f16c2.png"
