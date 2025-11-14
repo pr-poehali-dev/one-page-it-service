@@ -8,6 +8,15 @@ const MfoPage = () => {
 
   const offers = [
     {
+      name: "Digcashe",
+      amount: "До 100 000 ₽",
+      rate: "От 0%",
+      term: "До 365 дней",
+      features: ["Первый займ под 0%", "Одобрение за 5 минут", "Без справок о доходах"],
+      image: "https://cdn.poehali.dev/files/b5608183-b577-46c9-9f90-a99a4e14557e.png",
+      link: "https://digcashe.su/"
+    },
+    {
       name: "Credit7",
       amount: "До 30 000 ₽",
       rate: "От 0%",
@@ -126,7 +135,16 @@ const MfoPage = () => {
                     ))}
                   </div>
                   
-                  <Button className="w-full">Получить займ</Button>
+                  <Button 
+                    className="w-full"
+                    onClick={() => {
+                      if (offer.link) {
+                        window.open(offer.link, '_blank');
+                      }
+                    }}
+                  >
+                    Получить займ
+                  </Button>
                 </CardContent>
               </Card>
             ))}
