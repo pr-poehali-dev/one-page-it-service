@@ -8,14 +8,6 @@ const MfoPage = () => {
 
   const offers = [
     {
-      name: "Digcashe",
-      amount: "До 75 000 ₽",
-      rate: "От 0.1%",
-      term: "До 30 дней",
-      features: ["Первый займ под 0%", "Одобрение за 5 минут", "Без справок о доходах"],
-      image: "https://cdn.poehali.dev/files/89150fd6-1dbb-403c-8768-ee2ac412c734.png"
-    },
-    {
       name: "Кеш UP",
       amount: "До 75 000 ₽",
       rate: "От 0.1%",
