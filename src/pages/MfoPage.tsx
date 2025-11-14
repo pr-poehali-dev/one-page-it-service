@@ -13,7 +13,7 @@ const MfoPage = () => {
       rate: "От 0.1%",
       term: "До 30 дней",
       features: ["Первый займ под 0%", "Одобрение за 5 минут", "Без справок о доходах"],
-      image: "https://cdn.poehali.dev/files/b5608183-b577-46c9-9f90-a99a4e14557e.png",
+      image: "https://cdn.poehali.dev/files/89150fd6-1dbb-403c-8768-ee2ac412c734.png",
       link: "https://digcashe.su/"
     },
     {
