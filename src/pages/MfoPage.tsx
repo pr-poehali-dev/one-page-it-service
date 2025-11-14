@@ -27,7 +27,7 @@ const MfoPage = () => {
     {
       name: "Moneyman",
       amount: "До 100 000 ₽",
-      rate: "От 0.8%",
+      rate: "От 0%",
       term: "До 126 дней",
       features: ["Онлайн оформление", "На карту любого банка", "Лояльные условия"],
       image: "https://cdn.poehali.dev/files/595aac20-943e-479a-8906-ff32ce615da5.jpg"
