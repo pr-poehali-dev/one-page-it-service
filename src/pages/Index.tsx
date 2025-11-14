@@ -46,12 +46,12 @@ const Index = () => {
     {
       id: 1,
       category: "МФО",
-      title: "Микрофинансовые организации",
+      title: "Digcashe",
       description: "Быстрые займы на выгодных условиях. Одобрение за 5 минут.",
       icon: "Wallet",
       features: ["До 100 000 ₽", "Без справок", "На карту моментально"],
       gradient: "from-red-600/20 to-red-700/20",
-      link: "/mfo"
+      link: "https://digcashe.su/"
     },
     {
       id: 2,
@@ -222,7 +222,13 @@ const Index = () => {
                   
                   <Button 
                     className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 group-hover:shadow-md group-hover:shadow-purple-500/30 transition-all border-0"
-                    onClick={() => navigate(product.link)}
+                    onClick={() => {
+                      if (product.link.startsWith('http')) {
+                        window.open(product.link, '_blank');
+                      } else {
+                        navigate(product.link);
+                      }
+                    }}
                   >
                     Подробно
                   </Button>
