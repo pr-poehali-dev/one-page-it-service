@@ -16,12 +16,12 @@ const MfoPage = () => {
       image: "https://cdn.poehali.dev/files/83540891-27b0-4c6b-a6dd-88b6c95f16c2.png"
     },
     {
-      name: "Credit7",
-      amount: "До 30 000 ₽",
-      rate: "От 0%",
-      term: "До 30 дней",
-      features: ["Первый займ под 0%", "Решение за 5 минут", "Без проверки КИ"],
-      image: "https://cdn.poehali.dev/files/b5608183-b577-46c9-9f90-a99a4e14557e.png"
+      name: "Умные Наличные",
+      amount: "От 3 000 до 30 000 ₽",
+      rate: "От 0.8%",
+      term: "От 5 до 30 дней",
+      features: ["Получение за 15 минут", "На банковскую карту", "Простое оформление"],
+      image: "https://cdn.poehali.dev/files/fc5581ed-f490-4cda-ac9c-785d3cf317fd.png"
     },
     {
       name: "Moneyman",
