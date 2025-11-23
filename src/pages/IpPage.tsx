@@ -47,7 +47,7 @@ const IpPage = () => {
         <div className="container mx-auto max-w-4xl relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <Icon name="FileText" size={16} className="text-primary" />
-            <span className="text-sm font-medium text-primary">Для предпринимателей</span>
+            <span className="text-sm font-medium text-primary">Для будущих предпринимателей</span>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
