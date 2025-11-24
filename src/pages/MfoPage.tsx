@@ -84,7 +84,8 @@ const MfoPage = () => {
       rate: "От 0%",
       term: "До 21 дня",
       features: ["Моментальное одобрение 24/7", "Первый займ под 0%", "На карту за 5 минут"],
-      image: "https://cdn.poehali.dev/files/9909d2f8-c01e-4483-a072-a2bf6aa30ac3.jpg"
+      image: "https://cdn.poehali.dev/files/9909d2f8-c01e-4483-a072-a2bf6aa30ac3.jpg",
+      link: "https://clck.ru/3QVFuL"
     }
   ];
 
