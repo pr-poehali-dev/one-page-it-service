@@ -32,47 +32,47 @@ const RkoPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
-            <Button variant="ghost" onClick={() => navigate(-1)}>
-              <Icon name="ArrowLeft" className="mr-2" size={20} />
-              Назад
+            <Button variant="ghost" size="sm" onClick={() => navigate(-1)}>
+              <Icon name="ArrowLeft" className="mr-1 md:mr-2" size={18} />
+              <span className="text-sm md:text-base">Назад</span>
             </Button>
-            <h1 className="text-xl font-bold">РКО</h1>
-            <div className="w-24"></div>
+            <h1 className="text-lg md:text-xl font-bold">РКО</h1>
+            <div className="w-16 md:w-24"></div>
           </div>
         </div>
       </header>
 
-      <section className="py-16 px-6 relative overflow-hidden">
+      <section className="py-12 md:py-16 px-4 md:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
         <div className="container mx-auto max-w-4xl relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4 md:mb-6">
             <Icon name="Building2" size={16} className="text-primary" />
-            <span className="text-sm font-medium text-primary">Для бизнеса</span>
+            <span className="text-xs md:text-sm font-medium text-primary">Для бизнеса</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 px-4">
             Расчетно-кассовое обслуживание
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8 px-4">
             Откройте счёт для бизнеса онлайн за 1 день
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-12">
+          <div className="grid grid-cols-3 gap-3 md:gap-6 max-w-3xl mx-auto mt-8 md:mt-12 px-4">
             {[
               { icon: "Clock", title: "Быстро", desc: "Открытие от 3 до 5 дней" },
               { icon: "Percent", title: "Выгодно", desc: "Низкие тарифы" },
               { icon: "Shield", title: "Надёжно", desc: "Лицензированные банки" }
             ].map((item, index) => (
               <Card key={index} className="border-border/50">
-                <CardContent className="pt-6 text-center space-y-3">
-                  <div className="inline-flex p-3 rounded-xl bg-primary/10">
-                    <Icon name={item.icon} size={32} className="text-primary" />
+                <CardContent className="pt-4 md:pt-6 text-center space-y-2 md:space-y-3">
+                  <div className="inline-flex p-2 md:p-3 rounded-xl bg-primary/10">
+                    <Icon name={item.icon} size={24} className="text-primary md:w-8 md:h-8" />
                   </div>
-                  <h3 className="font-bold text-lg">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  <h3 className="font-bold text-sm md:text-lg">{item.title}</h3>
+                  <p className="text-xs md:text-sm text-muted-foreground">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -80,11 +80,11 @@ const RkoPage = () => {
         </div>
       </section>
 
-      <section className="py-16 px-6">
+      <section className="py-12 md:py-16 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold mb-12 text-center">Лучшие банки для открытия РКО</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Лучшие банки для открытия РКО</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {[
               { 
                 name: "Альфа Бизнес",
@@ -121,14 +121,14 @@ const RkoPage = () => {
               >
               <Card className="hover:border-primary/50 transition-colors flex flex-col h-full">
                 {bank.image && (
-                  <div className="w-full h-48 overflow-hidden">
+                  <div className="w-full h-40 md:h-48 overflow-hidden">
                     <img src={bank.image} alt={bank.name} className="w-full h-full object-cover rounded-t-lg" />
                   </div>
                 )}
-                <CardHeader>
-                  <CardTitle className="text-2xl">{bank.name}</CardTitle>
+                <CardHeader className="pb-3 md:pb-6">
+                  <CardTitle className="text-xl md:text-2xl">{bank.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4 flex-1">
+                <CardContent className="space-y-3 md:space-y-4 flex-1">
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Обслуживание:</span>

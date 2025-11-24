@@ -101,21 +101,21 @@ const Index = () => {
       
       {/* Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
-            <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center text-2xl font-bold text-primary-foreground">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary flex items-center justify-center text-xl md:text-2xl font-bold text-primary-foreground">
               F
             </div>
-            <nav className="hidden md:flex items-center gap-6">
-              <Button variant="ghost" onClick={() => scrollToSection('products')}>Продукты</Button>
-              <Button onClick={() => scrollToSection('contact')}>Контакты</Button>
+            <nav className="flex items-center gap-2 md:gap-6">
+              <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={() => scrollToSection('products')}>Продукты</Button>
+              <Button size="sm" className="text-xs md:text-sm" onClick={() => scrollToSection('contact')}>Контакты</Button>
             </nav>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-6 md:py-32 mt-20 pb-32">
+      <section className="relative overflow-hidden py-16 px-4 md:py-32 md:px-6 mt-16 md:mt-20 pb-20 md:pb-32">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[150px] bg-red-700/30" />
@@ -129,18 +129,18 @@ const Index = () => {
               <span className="text-sm font-medium text-primary">Финансовые решения</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent animate-gradient">ФиНавигатор</h1>
+            <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent animate-gradient px-4">ФиНавигатор</h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
               Подбираем лучшие финансовые продукты для бизнеса и личных целей
             </p>
             
-            <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all hover:scale-105" onClick={() => scrollToSection('products')}>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center pt-4 px-4">
+              <Button size="lg" className="text-base md:text-lg px-6 py-5 md:px-8 md:py-6 shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all hover:scale-105 w-full sm:w-auto" onClick={() => scrollToSection('products')}>
                 Выбрать продукт
                 <Icon name="ArrowDown" className="ml-2" size={20} />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 hover:bg-primary/10 hover:scale-105 transition-all" onClick={() => scrollToSection('contact')}>
+              <Button size="lg" variant="outline" className="text-base md:text-lg px-6 py-5 md:px-8 md:py-6 hover:bg-primary/10 hover:scale-105 transition-all w-full sm:w-auto" onClick={() => scrollToSection('contact')}>
                 Консультация
                 <Icon name="MessageCircle" className="ml-2" size={20} />
               </Button>
@@ -150,21 +150,21 @@ const Index = () => {
       </section>
 
       {/* Products Grid */}
-      <section id="products" className="py-20 px-6 relative">
+      <section id="products" className="py-12 md:py-20 px-4 md:px-6 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-red-700/5 via-background to-background -z-10" />
         <div className="absolute top-40 right-10 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-3xl" />
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent px-4">
               Наши продукты
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base md:text-xl text-muted-foreground px-4">
               Полный спектр финансовых услуг в одном месте
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {products.map((product, index) => (
               <div
                 key={product.id}
@@ -235,15 +235,15 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-background to-card/30">
+      <section className="py-12 md:py-20 px-4 md:px-6 bg-gradient-to-b from-background to-card/30">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent px-4">
               Почему выбирают нас
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 icon: "Shield",
@@ -263,14 +263,14 @@ const Index = () => {
             ].map((feature, index) => (
               <div 
                 key={index}
-                className="text-center space-y-4 p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-colors animate-fade-in"
+                className="text-center space-y-3 md:space-y-4 p-6 md:p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-colors animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="inline-flex p-4 rounded-2xl bg-primary/10 border border-primary/20">
-                  <Icon name={feature.icon} size={32} className="text-primary" />
+                <div className="inline-flex p-3 md:p-4 rounded-2xl bg-primary/10 border border-primary/20">
+                  <Icon name={feature.icon} size={28} className="text-primary md:w-8 md:h-8" />
                 </div>
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-red-400 via-orange-400 to-red-500 bg-clip-text text-transparent">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-red-400 via-orange-400 to-red-500 bg-clip-text text-transparent">{feature.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -278,22 +278,22 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 px-6 relative overflow-hidden">
+      <section id="contact" className="py-12 md:py-20 px-4 md:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-red-800/10" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         
-        <div className="container mx-auto max-w-4xl relative z-10 text-center space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold animate-fade-in bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent">
+        <div className="container mx-auto max-w-4xl relative z-10 text-center space-y-4 md:space-y-6">
+          <h2 className="text-3xl md:text-5xl font-bold animate-fade-in bg-gradient-to-r from-red-500 via-orange-400 to-red-600 bg-clip-text text-transparent px-4">
             Готовы начать?
           </h2>
-          <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <p className="text-base md:text-xl text-muted-foreground animate-fade-in px-4" style={{ animationDelay: '0.1s' }}>
             Получите бесплатную консультацию и подберите идеальный финансовый продукт
           </p>
           
-          <div className="flex flex-col items-center gap-4 pt-4">
+          <div className="flex flex-col items-center gap-4 pt-4 px-4">
             <Button 
               size="lg" 
-              className="animate-fade-in text-lg px-12 py-6 shadow-xl shadow-primary/20" 
+              className="animate-fade-in text-base md:text-lg px-8 py-5 md:px-12 md:py-6 shadow-xl shadow-primary/20 w-full sm:w-auto" 
               style={{ animationDelay: '0.2s' }}
               onClick={() => setIsContactOpen(true)}
             >

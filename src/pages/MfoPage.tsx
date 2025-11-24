@@ -93,20 +93,20 @@ const MfoPage = () => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
-            <Button variant="ghost" onClick={() => navigate(-1)}>
-              <Icon name="ArrowLeft" className="mr-2" size={20} />
-              Назад
+            <Button variant="ghost" size="sm" onClick={() => navigate(-1)}>
+              <Icon name="ArrowLeft" className="mr-1 md:mr-2" size={18} />
+              <span className="text-sm md:text-base">Назад</span>
             </Button>
-            <h1 className="text-xl font-bold">МФО</h1>
-            <div className="w-24"></div>
+            <h1 className="text-lg md:text-xl font-bold">МФО</h1>
+            <div className="w-16 md:w-24"></div>
           </div>
         </div>
       </header>
 
       {/* Hero */}
-      <section className="py-16 px-6 relative overflow-hidden">
+      <section className="py-12 md:py-16 px-4 md:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
         
@@ -116,37 +116,37 @@ const MfoPage = () => {
             <span className="text-sm font-medium text-primary">Микрофинансовые организации</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 px-4">
             Быстрые займы на выгодных условиях
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8 px-4">
             Получите деньги на карту за 5 минут. Минимум документов, максимум удобства
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="p-6 rounded-xl bg-card/50 border border-border/50">
-              <div className="text-3xl font-bold text-primary mb-2">5 мин</div>
-              <div className="text-sm text-muted-foreground">Время одобрения</div>
+          <div className="grid grid-cols-3 gap-3 md:gap-6 max-w-3xl mx-auto px-4">
+            <div className="p-4 md:p-6 rounded-xl bg-card/50 border border-border/50">
+              <div className="text-2xl md:text-3xl font-bold text-primary mb-1 md:mb-2">5 мин</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Время одобрения</div>
             </div>
-            <div className="p-6 rounded-xl bg-card/50 border border-border/50">
-              <div className="text-3xl font-bold text-primary mb-2">0%</div>
-              <div className="text-sm text-muted-foreground">Первый займ</div>
+            <div className="p-4 md:p-6 rounded-xl bg-card/50 border border-border/50">
+              <div className="text-2xl md:text-3xl font-bold text-primary mb-1 md:mb-2">0%</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Первый займ</div>
             </div>
-            <div className="p-6 rounded-xl bg-card/50 border border-border/50">
-              <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">Круглосуточно</div>
+            <div className="p-4 md:p-6 rounded-xl bg-card/50 border border-border/50">
+              <div className="text-2xl md:text-3xl font-bold text-primary mb-1 md:mb-2">24/7</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Круглосуточно</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Offers */}
-      <section className="py-16 px-6">
+      <section className="py-12 md:py-16 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold mb-12 text-center">Лучшие предложения</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Лучшие предложения</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {offers.map((offer, index) => (
               <div
                 key={index}
@@ -165,10 +165,10 @@ const MfoPage = () => {
                     <img src={offer.image} alt={offer.name} className="w-full h-auto rounded-t-lg" />
                   </div>
                 )}
-                <CardHeader>
-                  <CardTitle className="text-2xl">{offer.name}</CardTitle>
+                <CardHeader className="pb-3 md:pb-6">
+                  <CardTitle className="text-xl md:text-2xl">{offer.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-3 md:space-y-4">
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Сумма:</span>
