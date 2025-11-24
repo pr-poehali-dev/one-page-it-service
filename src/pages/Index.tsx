@@ -328,22 +328,7 @@ const Index = () => {
               <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
             </a>
             
-            <a
-              href="https://vk.com/dinero228"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all group"
-            >
-              <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                <Icon name="MessageCircle" size={24} className="text-primary" />
-              </div>
-              <div className="flex-1">
-                <div className="font-semibold">Написать ВКонтакте</div>
-                <div className="text-sm text-muted-foreground">Онлайн c 8:00 до 22:00 по МСК</div>
-              </div>
-              <Icon name="ChevronRight" size={20} className="text-muted-foreground" />
-            </a>
-            
+
             <a
               href="https://t.me/helper1338"
               target="_blank"
