@@ -70,46 +70,6 @@ const MfoPage = () => {
       features: ["Первый бесплатно", "Одобрение: 55%", "Дней без %: 31"],
       image: "https://cdn.poehali.dev/files/9909d2f8-c01e-4483-a072-a2bf6aa30ac3.jpg",
       link: "https://clck.ru/3QVFuL"
-    },
-    {
-      name: "Срочно Деньги",
-      amount: "2 000 - 15 000 ₽",
-      rate: "От 0%",
-      term: "1 - 180 дн.",
-      features: ["Первый бесплатно", "Одобрение: 55%", "Дней без %: 7"],
-      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/3f984ed7-2aa9-40e9-9452-1bcc861b28d2.jpg"
-    },
-    {
-      name: "Fin5",
-      amount: "3 000 - 25 000 ₽",
-      rate: "От 0%",
-      term: "7 - 30 дн.",
-      features: ["Моментально на карту", "Одобрение: 66%", "Дней без %: 0"],
-      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/4797575c-a379-413d-a494-122b3b3f480b.jpg"
-    },
-    {
-      name: "Быстроденьги",
-      amount: "1 000 - 30 000 ₽",
-      rate: "От 0%",
-      term: "1 - 180 дн.",
-      features: ["Первый бесплатно", "Одобрение: 69%", "Дней без %: 10"],
-      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/2830272a-d165-4a6d-9598-0f11e8364be0.jpg"
-    },
-    {
-      name: "Деньги сразу",
-      amount: "1 000 - 100 000 ₽",
-      rate: "От 0%",
-      term: "17 - 179 дн.",
-      features: ["Деньги за 5 минут", "Одобрение: 68%", "Сумма: 1 000 - 100 000 ₽"],
-      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/c7e0bb4f-03d9-446e-a2fd-006dfafa2241.jpg"
-    },
-    {
-      name: "Доброзайм",
-      amount: "1 000 - 100 000 ₽",
-      rate: "От 0%",
-      term: "1 - 378 дн.",
-      features: ["Первый бесплатно", "Одобрение: 46%", "Дней без %: 10"],
-      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/9922e663-700b-4b47-a8fb-7c36890c7a57.jpg"
     }
   ];
 
