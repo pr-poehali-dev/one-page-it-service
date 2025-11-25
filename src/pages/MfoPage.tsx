@@ -174,7 +174,11 @@ const MfoPage = () => {
                   {/* Логотип */}
                   {offer.image && (
                     <div className="flex items-center justify-center mb-2">
-                      <div className={offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "MoneyMan" ? "w-full h-8" : "flex items-center gap-2"}>
+                      <div className={
+                        offer.name === "MoneyMan" ? "w-full h-10" :
+                        offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" ? "w-full h-8" : 
+                        "flex items-center gap-2"
+                      }>
                         {offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "MoneyMan" ? (
                           <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
                         ) : (
