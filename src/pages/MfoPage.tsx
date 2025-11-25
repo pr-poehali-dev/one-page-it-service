@@ -191,7 +191,7 @@ const MfoPage = () => {
                   
                   {/* Характеристики */}
                   <div className="text-center space-y-1 text-sm">
-                    <div><span className="text-gray-600">Одобрение:</span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
+                    <div><span className="text-gray-600"></span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
                     <div><span className="text-gray-600">Сумма:</span> <span className="font-semibold">{offer.amount}</span></div>
                     <div><span className="text-gray-600">Срок:</span> <span className="font-semibold">{offer.term}</span></div>
                     <div><span className="text-gray-600">Дней без %:</span> <span className="font-semibold">{offer.features[2]?.replace('Дней без %: ', '')}</span></div>
