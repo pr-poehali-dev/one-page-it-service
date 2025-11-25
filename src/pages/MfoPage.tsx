@@ -159,49 +159,54 @@ const MfoPage = () => {
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-              <Card className="hover:border-primary/50 transition-colors h-full">
-                {offer.image && (
-                  <div className="w-full">
-                    <img src={offer.image} alt={offer.name} className="w-full h-auto rounded-t-lg" />
-                  </div>
-                )}
-                <CardHeader className="pb-3 md:pb-6">
-                  <CardTitle className="text-xl md:text-2xl">{offer.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3 md:space-y-4">
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Сумма:</span>
-                      <span className="font-semibold">{offer.amount}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Ставка:</span>
-                      <span className="font-semibold">{offer.rate}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Срок:</span>
-                      <span className="font-semibold">{offer.term}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="border-t border-border pt-4 space-y-2">
-                    {offer.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <Icon name="CheckCircle2" size={16} className="text-primary" />
-                        <span className="text-sm">{feature}</span>
+              <Card className="relative border-2 border-green-500 hover:border-green-600 transition-colors h-full bg-white">
+                {/* Номер карточки */}
+                <div className="absolute top-3 left-3 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-700">
+                  {index + 1}
+                </div>
+                
+                {/* Звёздочка */}
+                <div className="absolute top-3 right-3">
+                  <Icon name="Star" size={20} className="text-yellow-500 fill-yellow-500" />
+                </div>
+
+                <CardContent className="pt-12 pb-6 px-4 space-y-4">
+                  {/* Логотип и название */}
+                  {offer.image && (
+                    <div className="flex items-center justify-center gap-3 mb-4">
+                      <div className="w-12 h-12 flex-shrink-0">
+                        <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
                       </div>
-                    ))}
+                      <h3 className="text-xl font-bold uppercase tracking-wide">{offer.name}</h3>
+                    </div>
+                  )}
+                  
+                  {/* Синяя плашка "Первый бесплатно" */}
+                  <div className="bg-blue-100 text-blue-900 text-center py-2 rounded-lg font-medium text-sm">
+                    Первый бесплатно
                   </div>
                   
+                  {/* Название компании */}
+                  <h4 className="text-center font-bold text-lg">{offer.name}</h4>
+                  
+                  {/* Характеристики */}
+                  <div className="text-center space-y-1 text-sm">
+                    <div><span className="text-gray-600">Одобрение:</span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
+                    <div><span className="text-gray-600">Сумма:</span> <span className="font-semibold">{offer.amount}</span></div>
+                    <div><span className="text-gray-600">Срок:</span> <span className="font-semibold">{offer.term}</span></div>
+                    <div><span className="text-gray-600">Дней без %:</span> <span className="font-semibold">{offer.features[2]?.replace('Дней без %: ', '')}</span></div>
+                  </div>
+                  
+                  {/* Кнопка */}
                   <Button 
-                    className="w-full"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-6 text-base"
                     onClick={() => {
                       if (offer.link) {
                         window.open(offer.link, '_blank');
                       }
                     }}
                   >
-                    Получить займ
+                    Получить
                   </Button>
                 </CardContent>
               </Card>
