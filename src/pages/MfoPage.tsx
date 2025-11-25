@@ -36,7 +36,7 @@ const MfoPage = () => {
       rate: "От 0%",
       term: "5 - 30 дн.",
       features: ["Деньги на карту", "Одобрение: 79%", "Дней без %: 30"],
-      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/c69a2055-d2bb-430c-9e57-c1290e14b970.jpg"
+      image: "https://cdn.poehali.dev/files/13e4286d-1199-4f0b-a6cb-5a19bf8b9ced.jpg"
     },
     {
       name: "MoneyMan",
@@ -176,10 +176,10 @@ const MfoPage = () => {
                     <div className="flex items-center justify-center mb-2">
                       <div className={
                         offer.name === "MoneyMan" || offer.name === "еКапуста" || offer.name === "Умные наличные" ? "w-full h-10" :
-                        offer.name === "Max Credit" || offer.name === "Займер" || offer.name === "Lime-zaim" ? "w-full h-8" : 
+                        offer.name === "Max Credit" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "Webbankir" ? "w-full h-8" : 
                         "flex items-center gap-2"
                       }>
-                        {offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "MoneyMan" ? (
+                        {offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "MoneyMan" || offer.name === "Webbankir" ? (
                           <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
                         ) : (
                           <>
