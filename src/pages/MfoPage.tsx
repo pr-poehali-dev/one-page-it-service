@@ -40,10 +40,10 @@ const MfoPage = () => {
     },
     {
       name: "MoneyMan",
-      amount: "1 500 - 30 000 ₽",
-      rate: "От 0%",
-      term: "5 - 33 дн.",
-      features: ["Деньги на карту", "Одобрение: 72%", "Дней без %: 21"],
+      amount: "до 100 000 ₽",
+      rate: "от 0 до 0,8%",
+      term: "от 5 до 364",
+      features: ["Деньги на карту", "Одобрение: Высокое", "Дней без %: 21"],
       image: "https://cdn.poehali.dev/files/3143a8ba-e976-4e9c-948b-b8305275162d.png"
     },
     {
@@ -204,8 +204,8 @@ const MfoPage = () => {
                   <div className="text-center space-y-0.5 text-xs">
                     <div><span className="text-gray-600">Одобрение:</span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
                     <div><span className="text-gray-600">Сумма:</span> <span className="font-semibold">{offer.amount}</span></div>
-                    <div><span className="text-gray-600">Срок:</span> <span className="font-semibold">{offer.term}</span></div>
-                    <div><span className="text-gray-600">Дней без %:</span> <span className="font-semibold">{offer.features[2]?.replace('Дней без %: ', '')}</span></div>
+                    <div><span className="text-gray-600">Срок (дни):</span> <span className="font-semibold">{offer.term}</span></div>
+                    {offer.rate && <div><span className="text-gray-600">Ставка:</span> <span className="font-semibold">{offer.rate}</span></div>}
                   </div>
                   
                   {/* Кнопка */}
