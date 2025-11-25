@@ -31,61 +31,85 @@ const MfoPage = () => {
 
   const offers = [
     {
-      name: "Кеш UP",
-      amount: "До 75 000 ₽",
-      rate: "От 0.1%",
-      term: "До 30 дней",
-      features: ["Первый займ бесплатно", "Мгновенное одобрение", "Без скрытых комиссий"],
-      image: "https://cdn.poehali.dev/files/83540891-27b0-4c6b-a6dd-88b6c95f16c2.png"
-    },
-    {
-      name: "Умные Наличные",
-      amount: "От 3 000 до 30 000 ₽",
-      rate: "От 0.8%",
-      term: "От 5 до 30 дней",
-      features: ["Получение за 15 минут", "На банковскую карту", "Простое оформление"],
-      image: "https://cdn.poehali.dev/files/fc5581ed-f490-4cda-ac9c-785d3cf317fd.png"
-    },
-    {
-      name: "Moneyman",
-      amount: "До 100 000 ₽",
+      name: "Webbankir",
+      amount: "3 000 - 30 000 ₽",
       rate: "От 0%",
-      term: "До 126 дней",
-      features: ["Онлайн оформление", "На карту любого банка", "Лояльные условия"],
+      term: "5 - 30 дн.",
+      features: ["Первый бесплатно", "Одобрение: 79%", "Дней без %: 30"],
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/c69a2055-d2bb-430c-9e57-c1290e14b970.jpg"
+    },
+    {
+      name: "MoneyMan",
+      amount: "1 500 - 30 000 ₽",
+      rate: "От 0%",
+      term: "5 - 33 дн.",
+      features: ["Первый бесплатно", "Одобрение: 72%", "Дней без %: 21"],
       image: "https://cdn.poehali.dev/files/595aac20-943e-479a-8906-ff32ce615da5.jpg"
     },
     {
-      name: "Займер",
-      amount: "До 30 000 ₽",
+      name: "Lime-zaim",
+      amount: "2 000 - 100 000 ₽",
       rate: "От 0%",
-      term: "До 30 дней",
-      features: ["Без отказа", "Круглосуточно", "Моментальное одобрение"],
-      image: "https://cdn.poehali.dev/files/779fdcf4-f436-4483-9c28-a7fc21a21c53.png"
-    },
-    {
-      name: "Макс Кредит",
-      amount: "До 30 000 ₽",
-      rate: "От 0.8%",
-      term: "До 30 дней",
-      features: ["Быстрое одобрение", "На карту через 5 минут", "Без проверки кредитной истории"],
-      image: "https://cdn.poehali.dev/files/16133f03-525a-4e29-b8f9-ad1507367e45.png"
-    },
-    {
-      name: "Лайм Займ",
-      amount: "До 20 000 ₽",
-      rate: "0%",
-      term: "До 40 дней",
-      features: ["Первый заём бесплатно", "Одобрение за 5 минут", "На карту любого банка"],
+      term: "10 - 365 дн.",
+      features: ["Первый бесплатно", "Одобрение: 73%", "Дней без %: 40"],
       image: "https://cdn.poehali.dev/files/7a5fd849-9eee-410a-bfb0-53e172c0fd42.png"
     },
     {
-      name: "еКапуста",
-      amount: "До 30 000 ₽",
+      name: "Займер",
+      amount: "2 000 - 30 000 ₽",
       rate: "От 0%",
-      term: "До 21 дня",
-      features: ["Моментальное одобрение 24/7", "Первый займ под 0%", "На карту за 5 минут"],
+      term: "7 - 30 дн.",
+      features: ["Первый бесплатно", "Одобрение: 70%", "Дней без %: 30"],
+      image: "https://cdn.poehali.dev/files/779fdcf4-f436-4483-9c28-a7fc21a21c53.png"
+    },
+    {
+      name: "еКапуста",
+      amount: "100 - 30 000 ₽",
+      rate: "От 0%",
+      term: "7 - 21 дн.",
+      features: ["Первый бесплатно", "Одобрение: 55%", "Дней без %: 31"],
       image: "https://cdn.poehali.dev/files/9909d2f8-c01e-4483-a072-a2bf6aa30ac3.jpg",
       link: "https://clck.ru/3QVFuL"
+    },
+    {
+      name: "Срочно Деньги",
+      amount: "2 000 - 15 000 ₽",
+      rate: "От 0%",
+      term: "1 - 180 дн.",
+      features: ["Первый бесплатно", "Одобрение: 55%", "Дней без %: 7"],
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/3f984ed7-2aa9-40e9-9452-1bcc861b28d2.jpg"
+    },
+    {
+      name: "Fin5",
+      amount: "3 000 - 25 000 ₽",
+      rate: "От 0%",
+      term: "7 - 30 дн.",
+      features: ["Моментально на карту", "Одобрение: 66%", "Дней без %: 0"],
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/4797575c-a379-413d-a494-122b3b3f480b.jpg"
+    },
+    {
+      name: "Быстроденьги",
+      amount: "1 000 - 30 000 ₽",
+      rate: "От 0%",
+      term: "1 - 180 дн.",
+      features: ["Первый бесплатно", "Одобрение: 69%", "Дней без %: 10"],
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/2830272a-d165-4a6d-9598-0f11e8364be0.jpg"
+    },
+    {
+      name: "Деньги сразу",
+      amount: "1 000 - 100 000 ₽",
+      rate: "От 0%",
+      term: "17 - 179 дн.",
+      features: ["Деньги за 5 минут", "Одобрение: 68%", "Сумма: 1 000 - 100 000 ₽"],
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/c7e0bb4f-03d9-446e-a2fd-006dfafa2241.jpg"
+    },
+    {
+      name: "Доброзайм",
+      amount: "1 000 - 100 000 ₽",
+      rate: "От 0%",
+      term: "1 - 378 дн.",
+      features: ["Первый бесплатно", "Одобрение: 46%", "Дней без %: 10"],
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/9922e663-700b-4b47-a8fb-7c36890c7a57.jpg"
     }
   ];
 
