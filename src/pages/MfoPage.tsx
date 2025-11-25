@@ -70,6 +70,22 @@ const MfoPage = () => {
       features: ["Первый бесплатно", "Одобрение: 55%", "Дней без %: 31"],
       image: "https://cdn.poehali.dev/files/9909d2f8-c01e-4483-a072-a2bf6aa30ac3.jpg",
       link: "https://clck.ru/3QVFuL"
+    },
+    {
+      name: "Max Credit",
+      amount: "1 000 - 30 000 ₽",
+      rate: "От 0%",
+      term: "5 - 30 дн.",
+      features: ["Первый бесплатно", "Одобрение: 75%", "Дней без %: 30"],
+      image: "https://cdn.poehali.dev/files/placeholder-mfo.jpg"
+    },
+    {
+      name: "Умные наличные",
+      amount: "3 000 - 50 000 ₽",
+      rate: "От 0%",
+      term: "7 - 30 дн.",
+      features: ["Первый бесплатно", "Одобрение: 70%", "Дней без %: 21"],
+      image: "https://cdn.poehali.dev/files/placeholder-mfo.jpg"
     }
   ];
 
