@@ -32,10 +32,10 @@ const MfoPage = () => {
   const offers = [
     {
       name: "Webbankir",
-      amount: "3 000 - 30 000 ₽",
-      rate: "От 0%",
-      term: "5 - 30 дн.",
-      features: ["Деньги на карту", "Одобрение: 79%", "Дней без %: 30"],
+      amount: "до 30 000 ₽",
+      rate: "0%",
+      term: "от 7 до 30",
+      features: ["Деньги на карту", "Одобрение: Высокое", "Дней без %: 30"],
       image: "https://cdn.poehali.dev/files/13e4286d-1199-4f0b-a6cb-5a19bf8b9ced.jpg"
     },
     {
