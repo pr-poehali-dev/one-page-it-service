@@ -171,13 +171,21 @@ const MfoPage = () => {
                 </div>
 
                 <CardContent className="pt-10 pb-4 px-3 space-y-2.5">
-                  {/* Логотип и название */}
+                  {/* Логотип */}
                   {offer.image && (
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <div className="w-10 h-10 flex-shrink-0">
-                        <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
+                    <div className="flex items-center justify-center mb-2">
+                      <div className={offer.name === "Max Credit" ? "w-full h-8" : "flex items-center gap-2"}>
+                        {offer.name === "Max Credit" ? (
+                          <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
+                        ) : (
+                          <>
+                            <div className="w-10 h-10 flex-shrink-0">
+                              <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
+                            </div>
+                            <h3 className="text-base font-bold uppercase tracking-wide">{offer.name}</h3>
+                          </>
+                        )}
                       </div>
-                      <h3 className="text-base font-bold uppercase tracking-wide">{offer.name}</h3>
                     </div>
                   )}
                   
