@@ -175,8 +175,7 @@ const MfoPage = () => {
                   {offer.image && (
                     <div className="flex items-center justify-center mb-2">
                       <div className={
-                        offer.name === "MoneyMan" || offer.name === "еКапуста" || offer.name === "Умные наличные" ? "w-full h-10" :
-                        offer.name === "Max Credit" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "Webbankir" ? "w-full h-8" : 
+                        offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "MoneyMan" || offer.name === "Webbankir" ? "w-full h-8" : 
                         "flex items-center gap-2"
                       }>
                         {offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" || offer.name === "Lime-zaim" || offer.name === "MoneyMan" || offer.name === "Webbankir" ? (
