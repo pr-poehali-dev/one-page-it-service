@@ -64,10 +64,10 @@ const MfoPage = () => {
     },
     {
       name: "еКапуста",
-      amount: "100 - 30 000 ₽",
-      rate: "От 0%",
-      term: "7 - 21 дн.",
-      features: ["Деньги на карту", "Одобрение: 55%", "Дней без %: 31"],
+      amount: "до 30 000 ₽",
+      rate: "0%",
+      term: "от 7 до 21",
+      features: ["Деньги на карту", "Одобрение: Высокое", "Дней без %: 31"],
       image: "https://cdn.poehali.dev/files/4968904f-a38a-4e15-86a8-393a2efa7f6c.png",
       link: "https://clck.ru/3QVFuL"
     },
