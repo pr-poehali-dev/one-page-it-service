@@ -90,9 +90,9 @@ const MfoPage = () => {
     {
       name: "Юкки",
       amount: "до 30 000 ₽",
-      rate: "0,8%",
+      rate: "0%",
       term: "от 7 до 30",
-      features: ["Деньги на карту", "Одобрение: Высокое", "Ставка: 0,8%"],
+      features: ["Деньги на карту", "Одобрение: Высокое", "Ставка: 0%"],
       image: "https://cdn.poehali.dev/files/62c14d6f-984b-42ba-ab03-ff097816f997.png"
     }
   ];
