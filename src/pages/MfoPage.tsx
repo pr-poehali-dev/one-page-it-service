@@ -48,10 +48,10 @@ const MfoPage = () => {
     },
     {
       name: "Lime-zaim",
-      amount: "2 000 - 100 000 ₽",
-      rate: "От 0%",
-      term: "10 - 365 дн.",
-      features: ["Деньги на карту", "Одобрение: 73%", "Дней без %: 40"],
+      amount: "до 20 000 ₽",
+      rate: "0%",
+      term: "от 10 до 40",
+      features: ["Деньги на карту", "Одобрение: Высокое", "Дней без %: 40"],
       image: "https://cdn.poehali.dev/files/f047cd1b-2ecc-4cef-8141-2614ea578635.png"
     },
     {
