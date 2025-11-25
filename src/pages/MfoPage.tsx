@@ -74,7 +74,7 @@ const MfoPage = () => {
     {
       name: "Max Credit",
       amount: "5 000 - 30 000 ₽",
-      rate: "От 0%",
+      rate: "от 0,8%",
       term: "3 - 30 дн.",
       features: ["Первый бесплатно", "Одобрение: 75%", "Дней без %: 30"],
       image: "https://cdn.poehali.dev/files/ea853c5c-d811-45a0-9413-12f495734159.png"
