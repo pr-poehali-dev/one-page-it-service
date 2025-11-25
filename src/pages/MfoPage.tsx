@@ -82,7 +82,7 @@ const MfoPage = () => {
     {
       name: "Умные наличные",
       amount: "5 000 - 30 000 ₽",
-      rate: "От 0%",
+      rate: "от 0,8%",
       term: "3 - 30 дн.",
       features: ["Первый бесплатно", "Одобрение: 70%", "Дней без %: 21"],
       image: "https://cdn.poehali.dev/files/ec46d995-86f2-4c79-9753-c27ad0546b6f.png"
