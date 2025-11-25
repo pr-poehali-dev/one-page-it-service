@@ -146,7 +146,7 @@ const MfoPage = () => {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">Лучшие предложения</h2>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
             {offers.map((offer, index) => (
               <div
                 key={index}
@@ -170,28 +170,28 @@ const MfoPage = () => {
                   <Icon name="Star" size={20} className="text-yellow-500 fill-yellow-500" />
                 </div>
 
-                <CardContent className="pt-12 pb-6 px-4 space-y-4">
+                <CardContent className="pt-10 pb-4 px-3 space-y-2.5">
                   {/* Логотип и название */}
                   {offer.image && (
-                    <div className="flex items-center justify-center gap-3 mb-4">
-                      <div className="w-12 h-12 flex-shrink-0">
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <div className="w-10 h-10 flex-shrink-0">
                         <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
                       </div>
-                      <h3 className="text-xl font-bold uppercase tracking-wide">{offer.name}</h3>
+                      <h3 className="text-base font-bold uppercase tracking-wide">{offer.name}</h3>
                     </div>
                   )}
                   
                   {/* Синяя плашка */}
-                  <div className="bg-blue-100 text-blue-900 text-center py-2 rounded-lg font-medium text-sm">
+                  <div className="bg-blue-100 text-blue-900 text-center py-1.5 rounded-lg font-medium text-xs">
                     {offer.name === "Max Credit" || offer.name === "Умные наличные" ? "Деньги на карту" : "Первый бесплатно"}
                   </div>
                   
                   {/* Название компании */}
-                  <h4 className="text-center font-bold text-lg">{offer.name}</h4>
+                  <h4 className="text-center font-bold text-base">{offer.name}</h4>
                   
                   {/* Характеристики */}
-                  <div className="text-center space-y-1 text-sm">
-                    <div><span className="text-gray-600"></span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
+                  <div className="text-center space-y-0.5 text-xs">
+                    <div><span className="text-gray-600">Одобрение:</span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
                     <div><span className="text-gray-600">Сумма:</span> <span className="font-semibold">{offer.amount}</span></div>
                     <div><span className="text-gray-600">Срок:</span> <span className="font-semibold">{offer.term}</span></div>
                     <div><span className="text-gray-600">Дней без %:</span> <span className="font-semibold">{offer.features[2]?.replace('Дней без %: ', '')}</span></div>
@@ -199,7 +199,7 @@ const MfoPage = () => {
                   
                   {/* Кнопка */}
                   <Button 
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-6 text-base"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 text-sm"
                     onClick={() => {
                       if (offer.link) {
                         window.open(offer.link, '_blank');
