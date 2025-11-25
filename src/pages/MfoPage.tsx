@@ -182,7 +182,7 @@ const MfoPage = () => {
                   )}
                   
                   {/* Синяя плашка */}
-                  <div className="bg-blue-100 text-blue-900 text-center py-2 rounded-lg font-medium text-sm">{offer.features[0]}</div>
+                  <div className="bg-blue-100 text-blue-900 text-center py-2 rounded-lg font-medium text-sm">Первый бесплатно</div>
                   
                   {/* Название компании */}
                   <h4 className="text-center font-bold text-lg">{offer.name}</h4>
