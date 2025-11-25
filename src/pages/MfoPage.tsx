@@ -60,7 +60,7 @@ const MfoPage = () => {
       rate: "От 0%",
       term: "7 - 30 дн.",
       features: ["Деньги на карту", "Одобрение: 70%", "Дней без %: 30"],
-      image: "https://cdn.poehali.dev/files/779fdcf4-f436-4483-9c28-a7fc21a21c53.png"
+      image: "https://cdn.poehali.dev/files/2726d845-6c72-4df1-8a27-74e4604fa5af.png"
     },
     {
       name: "еКапуста",
@@ -174,8 +174,8 @@ const MfoPage = () => {
                   {/* Логотип */}
                   {offer.image && (
                     <div className="flex items-center justify-center mb-2">
-                      <div className={offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" ? "w-full h-8" : "flex items-center gap-2"}>
-                        {offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" ? (
+                      <div className={offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" ? "w-full h-8" : "flex items-center gap-2"}>
+                        {offer.name === "Max Credit" || offer.name === "еКапуста" || offer.name === "Умные наличные" || offer.name === "Займер" ? (
                           <img src={offer.image} alt={offer.name} className="w-full h-full object-contain" />
                         ) : (
                           <>
