@@ -77,7 +77,7 @@ const MfoPage = () => {
       rate: "От 0%",
       term: "5 - 30 дн.",
       features: ["Первый бесплатно", "Одобрение: 75%", "Дней без %: 30"],
-      image: "https://cdn.poehali.dev/files/placeholder-mfo.jpg"
+      image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/4b187500-b99b-4cad-91ff-c48c6afca9e7.jpg"
     },
     {
       name: "Умные наличные",
