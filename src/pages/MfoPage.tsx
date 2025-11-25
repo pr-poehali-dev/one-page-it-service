@@ -35,7 +35,7 @@ const MfoPage = () => {
       amount: "3 000 - 30 000 ₽",
       rate: "От 0%",
       term: "5 - 30 дн.",
-      features: ["Первый бесплатно", "Одобрение: 79%", "Дней без %: 30"],
+      features: ["Деньги на карту", "Одобрение: 79%", "Дней без %: 30"],
       image: "https://cdn.poehali.dev/projects/45b3c409-a171-49d8-9e53-0561cae7a268/files/c69a2055-d2bb-430c-9e57-c1290e14b970.jpg"
     },
     {
@@ -43,7 +43,7 @@ const MfoPage = () => {
       amount: "1 500 - 30 000 ₽",
       rate: "От 0%",
       term: "5 - 33 дн.",
-      features: ["Первый бесплатно", "Одобрение: 72%", "Дней без %: 21"],
+      features: ["Деньги на карту", "Одобрение: 72%", "Дней без %: 21"],
       image: "https://cdn.poehali.dev/files/595aac20-943e-479a-8906-ff32ce615da5.jpg"
     },
     {
@@ -51,7 +51,7 @@ const MfoPage = () => {
       amount: "2 000 - 100 000 ₽",
       rate: "От 0%",
       term: "10 - 365 дн.",
-      features: ["Первый бесплатно", "Одобрение: 73%", "Дней без %: 40"],
+      features: ["Деньги на карту", "Одобрение: 73%", "Дней без %: 40"],
       image: "https://cdn.poehali.dev/files/7a5fd849-9eee-410a-bfb0-53e172c0fd42.png"
     },
     {
@@ -59,7 +59,7 @@ const MfoPage = () => {
       amount: "2 000 - 30 000 ₽",
       rate: "От 0%",
       term: "7 - 30 дн.",
-      features: ["Первый бесплатно", "Одобрение: 70%", "Дней без %: 30"],
+      features: ["Деньги на карту", "Одобрение: 70%", "Дней без %: 30"],
       image: "https://cdn.poehali.dev/files/779fdcf4-f436-4483-9c28-a7fc21a21c53.png"
     },
     {
@@ -67,7 +67,7 @@ const MfoPage = () => {
       amount: "100 - 30 000 ₽",
       rate: "От 0%",
       term: "7 - 21 дн.",
-      features: ["Первый бесплатно", "Одобрение: 55%", "Дней без %: 31"],
+      features: ["Деньги на карту", "Одобрение: 55%", "Дней без %: 31"],
       image: "https://cdn.poehali.dev/files/9909d2f8-c01e-4483-a072-a2bf6aa30ac3.jpg",
       link: "https://clck.ru/3QVFuL"
     },
@@ -181,8 +181,8 @@ const MfoPage = () => {
                     </div>
                   )}
                   
-                  {/* Синяя плашка "Первый бесплатно" */}
-                  <div className="bg-blue-100 text-blue-900 text-center py-2 rounded-lg font-medium text-sm">Деньги на карту</div>
+                  {/* Синяя плашка */}
+                  <div className="bg-blue-100 text-blue-900 text-center py-2 rounded-lg font-medium text-sm">{offer.features[0]}</div>
                   
                   {/* Название компании */}
                   <h4 className="text-center font-bold text-lg">{offer.name}</h4>
