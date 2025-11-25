@@ -178,7 +178,7 @@ const MfoPage = () => {
                   <Icon name="Star" size={20} className="text-yellow-500 fill-yellow-500" />
                 </div>
 
-                <CardContent className="pt-10 pb-4 px-3 space-y-2.5">
+                <CardContent className="pt-10 pb-4 px-3 space-y-2.5 flex flex-col">
                   {/* Логотип */}
                   {offer.image && (
                     <div className="flex items-center justify-center mb-2">
@@ -207,6 +207,7 @@ const MfoPage = () => {
                   
                   {/* Название компании */}
                   {offer.name !== "Юкки" && <h4 className="text-center font-bold text-base">{offer.name}</h4>}
+                  {offer.name === "Юкки" && <div className="h-6"></div>}
                   
                   {/* Характеристики */}
                   <div className="text-center space-y-0.5 text-xs text-gray-900">
