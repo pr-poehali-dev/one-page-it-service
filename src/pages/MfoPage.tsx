@@ -201,11 +201,11 @@ const MfoPage = () => {
                   <h4 className="text-center font-bold text-base">{offer.name}</h4>
                   
                   {/* Характеристики */}
-                  <div className="text-center space-y-0.5 text-xs">
-                    <div><span className="text-gray-600">Одобрение:</span> <span className="font-semibold">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
-                    <div><span className="text-gray-600">Сумма:</span> <span className="font-semibold">{offer.amount}</span></div>
-                    <div><span className="text-gray-600">Срок (дни):</span> <span className="font-semibold">{offer.term}</span></div>
-                    {offer.rate && <div><span className="text-gray-600">Ставка:</span> <span className="font-semibold">{offer.rate}</span></div>}
+                  <div className="text-center space-y-0.5 text-xs text-gray-900">
+                    <div><span className="text-gray-700">Одобрение:</span> <span className="font-semibold text-gray-900">{offer.features[1]?.replace('Одобрение: ', '')}</span></div>
+                    <div><span className="text-gray-700">Сумма:</span> <span className="font-semibold text-gray-900">{offer.amount}</span></div>
+                    <div><span className="text-gray-700">Срок (дни):</span> <span className="font-semibold text-gray-900">{offer.term}</span></div>
+                    {offer.rate && <div><span className="text-gray-700">Ставка:</span> <span className="font-semibold text-gray-900">{offer.rate}</span></div>}
                   </div>
                   
                   {/* Кнопка */}
