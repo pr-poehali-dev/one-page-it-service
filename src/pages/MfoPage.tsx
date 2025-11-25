@@ -86,6 +86,14 @@ const MfoPage = () => {
       term: "3 - 30 дн.",
       features: ["Первый бесплатно", "Одобрение: 70%", "Дней без %: 21"],
       image: "https://cdn.poehali.dev/files/ec46d995-86f2-4c79-9753-c27ad0546b6f.png"
+    },
+    {
+      name: "Юкки",
+      amount: "до 30 000 ₽",
+      rate: "0,8%",
+      term: "от 15 до 30",
+      features: ["Деньги на карту", "Одобрение: Высокое", "Ставка: 0,8%"],
+      image: "https://cdn.poehali.dev/files/62c14d6f-984b-42ba-ab03-ff097816f997.png"
     }
   ];
 
