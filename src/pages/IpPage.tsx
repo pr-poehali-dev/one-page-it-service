@@ -16,8 +16,8 @@ const IpPage = () => {
       description: "Регистрация ИП + РКО бесплатно"
     },
     {
-      name: "Т-Банк",
-      logo: "https://cdn.poehali.dev/files/bbaa498e-4f4e-41fc-85c2-1600821b2406.png",
+      name: "ВТБ Банк",
+      logo: "https://cdn.poehali.dev/files/optimize.png",
       description: "Регистрация ИП + РКО бесплатно"
     },
     {
