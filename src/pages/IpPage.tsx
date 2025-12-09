@@ -13,17 +13,20 @@ const IpPage = () => {
     {
       name: "Альфа-Банк",
       logo: "https://cdn.poehali.dev/files/8d87d572-bb72-452c-ba1c-351780259352.png",
-      description: "Регистрация ИП + РКО бесплатно"
+      description: "Регистрация ИП + РКО бесплатно",
+      link: ""
     },
     {
       name: "ВТБ Банк",
       logo: "https://cdn.poehali.dev/files/optimize.png",
-      description: "Регистрация ИП + РКО бесплатно"
+      description: "Регистрация ИП + РКО бесплатно",
+      link: "https://cube-cpa.com/click/56?user_id=2712&platform_id=144&creative_id=56&erid=Kra23s7mG"
     },
     {
       name: "Точка Банк",
       logo: "https://cdn.poehali.dev/files/5663aad1-fbed-467d-a957-937c1f3c002b.png",
-      description: "Регистрация ИП + РКО бесплатно"
+      description: "Регистрация ИП + РКО бесплатно",
+      link: ""
     }
   ];
 
@@ -156,7 +159,16 @@ const IpPage = () => {
                     <h3 className="font-bold text-lg">{bank.name}</h3>
                     <p className="text-sm text-muted-foreground">{bank.description}</p>
                   </div>
-                  <Button className="w-full">Выбрать</Button>
+                  <Button 
+                    className="w-full"
+                    onClick={() => {
+                      if (bank.link) {
+                        window.open(bank.link, '_blank');
+                      }
+                    }}
+                  >
+                    Выбрать
+                  </Button>
                 </CardContent>
               </Card>
             ))}
