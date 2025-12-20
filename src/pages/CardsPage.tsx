@@ -136,7 +136,12 @@ const CardsPage = () => {
                     ))}
                   </div>
                   
-                  <Button className="w-full">Оформить карту</Button>
+                  <Button 
+                    className="w-full"
+                    onClick={() => window.open('https://clck.ru/3QvqWS', '_blank')}
+                  >
+                    Оформить карту
+                  </Button>
                 </CardContent>
               </Card>
               </div>
