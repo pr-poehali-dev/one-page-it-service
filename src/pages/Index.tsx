@@ -178,7 +178,7 @@ const Index = () => {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <Card 
-                  className="group hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 border-purple-500/30 bg-gradient-to-br from-purple-950/50 to-violet-950/50 backdrop-blur-sm hover:border-purple-400/50 overflow-hidden relative h-full"
+                  className="group hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 border-purple-500/30 bg-gradient-to-br from-purple-950/50 to-violet-950/50 backdrop-blur-sm hover:border-purple-400/50 overflow-hidden relative h-full flex flex-col"
                 >
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-violet-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
@@ -210,8 +210,8 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 
-                <CardContent className="relative z-10 space-y-4">
-                  <div className="space-y-2">
+                <CardContent className="relative z-10 space-y-4 flex flex-col flex-grow">
+                  <div className="space-y-2 flex-grow">
                     {product.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <Icon name="CheckCircle2" size={18} className="text-purple-400 flex-shrink-0" />
@@ -221,7 +221,7 @@ const Index = () => {
                   </div>
                   
                   <Button 
-                    className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 group-hover:shadow-md group-hover:shadow-purple-500/30 transition-all border-0"
+                    className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 group-hover:shadow-md group-hover:shadow-purple-500/30 transition-all border-0 mt-auto"
                     onClick={() => navigate(product.link)}
                   >
                     Подробно
