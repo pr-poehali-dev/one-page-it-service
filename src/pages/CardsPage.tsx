@@ -104,16 +104,16 @@ const CardsPage = () => {
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-              <Card className="hover:border-primary/50 transition-colors h-full">
+              <Card className="hover:border-primary/50 transition-colors h-full flex flex-col">
                 {card.image && (
                   <div className="w-full">
-                    <img src={card.image} alt={card.name} className="w-full h-auto rounded-t-lg" />
+                    <img src={card.image} alt={card.name} className="w-full h-48 object-cover rounded-t-lg" />
                   </div>
                 )}
                 <CardHeader className="pb-3 md:pb-6">
                   <CardTitle className="text-xl md:text-2xl">{card.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3 md:space-y-4">
+                <CardContent className="space-y-3 md:space-y-4 flex flex-col flex-grow">
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Кэшбэк:</span>
@@ -129,17 +129,17 @@ const CardsPage = () => {
                     </div>
                   </div>
                   
-                  <div className="border-t border-border pt-4 space-y-2">
+                  <div className="border-t border-border pt-4 space-y-2 flex-grow">
                     {card.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2">
-                        <Icon name="CheckCircle2" size={16} className="text-primary" />
+                        <Icon name="CheckCircle2" size={16} className="text-primary flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
                       </div>
                     ))}
                   </div>
                   
                   <Button 
-                    className="w-full"
+                    className="w-full mt-auto"
                     onClick={() => {
                       if (card.link && card.link !== "") {
                         window.open(card.link, '_blank');
