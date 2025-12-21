@@ -36,7 +36,8 @@ const CardsPage = () => {
       grace: "120 дней",
       limit: "До 700 000 ₽",
       features: ["Кэшбэк баллами", "Бесплатное обслуживание", "Снятие без комиссии"],
-      image: "https://cdn.poehali.dev/files/952e28ea-0eff-4877-928b-835d1aa6bc2e.jpg"
+      image: "https://cdn.poehali.dev/files/952e28ea-0eff-4877-928b-835d1aa6bc2e.jpg",
+      link: "https://clck.ru/3QwXgi"
     },
     {
       name: "Альфа-Банк 100 дней",
@@ -138,7 +139,13 @@ const CardsPage = () => {
                   
                   <Button 
                     className="w-full"
-                    onClick={() => window.open('https://clck.ru/3QvqWS', '_blank')}
+                    onClick={() => {
+                      if (card.link) {
+                        window.open(card.link, '_blank');
+                      } else {
+                        window.open('https://clck.ru/3QvqWS', '_blank');
+                      }
+                    }}
                   >
                     Оформить карту
                   </Button>
