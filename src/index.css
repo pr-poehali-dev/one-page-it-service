@@ -130,7 +130,7 @@
   position: fixed;
   top: -50px;
   left: 0;
-  right: 0;
+  width: 100vw;
   height: calc(100vh + 50px);
   pointer-events: none;
   z-index: 9999;
@@ -141,24 +141,33 @@
     radial-gradient(circle, rgba(255, 255, 255, 0.9) 1.2px, transparent 1.2px),
     radial-gradient(circle, white 1px, transparent 1px),
     radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px),
-    radial-gradient(circle, white 1.3px, transparent 1.3px);
+    radial-gradient(circle, white 1.3px, transparent 1.3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+    radial-gradient(circle, white 1.1px, transparent 1.1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1px);
   background-size:
-    250px 800px,
-    350px 900px,
-    200px 750px,
-    300px 850px,
-    280px 820px,
-    320px 880px,
-    380px 920px;
+    20vw 800px,
+    25vw 900px,
+    18vw 750px,
+    22vw 850px,
+    19vw 820px,
+    23vw 880px,
+    21vw 920px,
+    17vw 780px,
+    24vw 860px,
+    20vw 840px;
   background-position:
     0 0,
-    40px 0,
-    130px 0,
-    70px 0,
-    150px 0,
-    200px 0,
-    90px 0;
-  background-repeat: repeat-x;
+    10vw 0,
+    25vw 0,
+    35vw 0,
+    50vw 0,
+    60vw 0,
+    75vw 0,
+    85vw 0,
+    15vw 0,
+    45vw 0;
+  background-repeat: repeat;
   animation: snowfall 18s linear infinite;
 }
 
@@ -167,7 +176,7 @@
   position: fixed;
   top: -50px;
   left: 0;
-  right: 0;
+  width: 100vw;
   height: calc(100vh + 50px);
   pointer-events: none;
   z-index: 9999;
@@ -176,20 +185,29 @@
     radial-gradient(circle, white 1.5px, transparent 1.5px),
     radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
     radial-gradient(circle, white 1.2px, transparent 1.2px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px),
+    radial-gradient(circle, white 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.9) 1.3px, transparent 1.3px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1.1px, transparent 1.1px);
   background-size:
-    290px 850px,
-    330px 920px,
-    260px 780px,
-    310px 860px,
-    340px 890px;
+    21vw 850px,
+    24vw 920px,
+    19vw 780px,
+    23vw 860px,
+    20vw 890px,
+    18vw 820px,
+    22vw 900px,
+    25vw 840px;
   background-position:
-    50px 0,
-    120px 0,
-    180px 0,
-    30px 0,
-    210px 0;
-  background-repeat: repeat-x;
+    8vw 0,
+    20vw 0,
+    40vw 0,
+    55vw 0,
+    70vw 0,
+    82vw 0,
+    30vw 0,
+    65vw 0;
+  background-repeat: repeat;
   animation: snowfall-reverse 23s linear infinite;
 }
 
