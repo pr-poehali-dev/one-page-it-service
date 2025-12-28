@@ -80,44 +80,20 @@
 /* Чтобы убрать после зимы - удали всё от этой строки до конца файла */
 
 @keyframes snowfall {
-  from {
-    background-position:
-      0 0,
-      40px 0,
-      130px 0,
-      70px 0,
-      150px 0,
-      200px 0,
-      90px 0;
+  0% {
+    transform: translateY(0);
   }
-  to {
-    background-position:
-      50px 100vh,
-      90px 100vh,
-      180px 100vh,
-      120px 100vh,
-      200px 100vh,
-      250px 100vh,
-      140px 100vh;
+  100% {
+    transform: translateY(100vh);
   }
 }
 
 @keyframes snowfall-reverse {
-  from {
-    background-position:
-      50px 0,
-      120px 0,
-      180px 0,
-      30px 0,
-      210px 0;
+  0% {
+    transform: translateY(0);
   }
-  to {
-    background-position:
-      0 100vh,
-      70px 100vh,
-      130px 100vh,
-      -20px 100vh,
-      160px 100vh;
+  100% {
+    transform: translateY(100vh);
   }
 }
 
@@ -128,10 +104,10 @@
 .winter-theme::before {
   content: "";
   position: fixed;
-  top: -50px;
+  top: -100vh;
   left: 0;
   width: 100vw;
-  height: calc(100vh + 50px);
+  height: 100vh;
   pointer-events: none;
   z-index: 9999;
   background-image:
@@ -145,39 +121,29 @@
     radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
     radial-gradient(circle, white 1.1px, transparent 1.1px),
     radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1px);
-  background-size:
-    20vw 800px,
-    25vw 900px,
-    18vw 750px,
-    22vw 850px,
-    19vw 820px,
-    23vw 880px,
-    21vw 920px,
-    17vw 780px,
-    24vw 860px,
-    20vw 840px;
+  background-size: 100vw 100vh;
   background-position:
-    0 0,
-    10vw 0,
-    25vw 0,
-    35vw 0,
-    50vw 0,
-    60vw 0,
-    75vw 0,
-    85vw 0,
-    15vw 0,
-    45vw 0;
-  background-repeat: repeat;
+    5% 10%,
+    15% 25%,
+    30% 5%,
+    40% 35%,
+    55% 15%,
+    65% 40%,
+    75% 20%,
+    85% 30%,
+    20% 45%,
+    50% 50%;
+  background-repeat: no-repeat;
   animation: snowfall 18s linear infinite;
 }
 
 .winter-theme::after {
   content: "";
   position: fixed;
-  top: -50px;
+  top: -100vh;
   left: 0;
   width: 100vw;
-  height: calc(100vh + 50px);
+  height: 100vh;
   pointer-events: none;
   z-index: 9999;
   background-image:
@@ -189,25 +155,17 @@
     radial-gradient(circle, white 1px, transparent 1px),
     radial-gradient(circle, rgba(255, 255, 255, 0.9) 1.3px, transparent 1.3px),
     radial-gradient(circle, rgba(255, 255, 255, 0.8) 1.1px, transparent 1.1px);
-  background-size:
-    21vw 850px,
-    24vw 920px,
-    19vw 780px,
-    23vw 860px,
-    20vw 890px,
-    18vw 820px,
-    22vw 900px,
-    25vw 840px;
+  background-size: 100vw 100vh;
   background-position:
-    8vw 0,
-    20vw 0,
-    40vw 0,
-    55vw 0,
-    70vw 0,
-    82vw 0,
-    30vw 0,
-    65vw 0;
-  background-repeat: repeat;
+    12% 8%,
+    25% 22%,
+    45% 12%,
+    58% 38%,
+    72% 18%,
+    88% 28%,
+    35% 42%,
+    68% 48%;
+  background-repeat: no-repeat;
   animation: snowfall-reverse 23s linear infinite;
 }
 
