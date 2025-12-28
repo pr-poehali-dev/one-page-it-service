@@ -211,4 +211,104 @@
   animation: snowfall-reverse 23s linear infinite;
 }
 
+@keyframes twinkle-lights {
+  0%,
+  100% {
+    opacity: 1;
+    filter: brightness(1.2);
+  }
+  50% {
+    opacity: 0.6;
+    filter: brightness(0.8);
+  }
+}
+
+.christmas-lights-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.christmas-lights {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  top: 0;
+  background-image:
+    radial-gradient(circle at 5% 50%, #ff0000 3px, transparent 3px),
+    radial-gradient(circle at 10% 50%, #00ff00 3px, transparent 3px),
+    radial-gradient(circle at 15% 50%, #ffff00 3px, transparent 3px),
+    radial-gradient(circle at 20% 50%, #0000ff 3px, transparent 3px),
+    radial-gradient(circle at 25% 50%, #ff00ff 3px, transparent 3px),
+    radial-gradient(circle at 30% 50%, #00ffff 3px, transparent 3px),
+    radial-gradient(circle at 35% 50%, #ff0000 3px, transparent 3px),
+    radial-gradient(circle at 40% 50%, #00ff00 3px, transparent 3px),
+    radial-gradient(circle at 45% 50%, #ffff00 3px, transparent 3px),
+    radial-gradient(circle at 50% 50%, #0000ff 3px, transparent 3px),
+    radial-gradient(circle at 55% 50%, #ff00ff 3px, transparent 3px),
+    radial-gradient(circle at 60% 50%, #00ffff 3px, transparent 3px),
+    radial-gradient(circle at 65% 50%, #ff0000 3px, transparent 3px),
+    radial-gradient(circle at 70% 50%, #00ff00 3px, transparent 3px),
+    radial-gradient(circle at 75% 50%, #ffff00 3px, transparent 3px),
+    radial-gradient(circle at 80% 50%, #0000ff 3px, transparent 3px),
+    radial-gradient(circle at 85% 50%, #ff00ff 3px, transparent 3px),
+    radial-gradient(circle at 90% 50%, #00ffff 3px, transparent 3px),
+    radial-gradient(circle at 95% 50%, #ff0000 3px, transparent 3px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: twinkle-lights 2s ease-in-out infinite;
+}
+
+.christmas-lights::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 4%,
+    transparent 6%,
+    rgba(255, 255, 255, 0.3) 9%,
+    transparent 11%,
+    rgba(255, 255, 255, 0.3) 14%,
+    transparent 16%,
+    rgba(255, 255, 255, 0.3) 19%,
+    transparent 21%,
+    rgba(255, 255, 255, 0.3) 24%,
+    transparent 26%,
+    rgba(255, 255, 255, 0.3) 29%,
+    transparent 31%,
+    rgba(255, 255, 255, 0.3) 34%,
+    transparent 36%,
+    rgba(255, 255, 255, 0.3) 39%,
+    transparent 41%,
+    rgba(255, 255, 255, 0.3) 44%,
+    transparent 46%,
+    rgba(255, 255, 255, 0.3) 49%,
+    transparent 51%,
+    rgba(255, 255, 255, 0.3) 54%,
+    transparent 56%,
+    rgba(255, 255, 255, 0.3) 59%,
+    transparent 61%,
+    rgba(255, 255, 255, 0.3) 64%,
+    transparent 66%,
+    rgba(255, 255, 255, 0.3) 69%,
+    transparent 71%,
+    rgba(255, 255, 255, 0.3) 74%,
+    transparent 76%,
+    rgba(255, 255, 255, 0.3) 79%,
+    transparent 81%,
+    rgba(255, 255, 255, 0.3) 84%,
+    transparent 86%,
+    rgba(255, 255, 255, 0.3) 89%,
+    transparent 91%,
+    rgba(255, 255, 255, 0.3) 94%,
+    transparent 96%,
+    transparent 100%
+  );
+}
+
 /* === КОНЕЦ НОВОГОДНЕГО СТИЛЯ === */
