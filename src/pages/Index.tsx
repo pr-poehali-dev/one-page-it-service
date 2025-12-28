@@ -10,6 +10,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Icon from "@/components/ui/icon";
+import Snowfall from "@/components/Snowfall";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -87,6 +88,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
+      <Snowfall />
       {/* Background Decorative Icons */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.02] z-0">
         <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
