@@ -44,7 +44,8 @@ const MfoPage = () => {
       rate: "от 0 до 0,8%",
       term: "от 5 до 364",
       features: ["Деньги на карту", "Одобрение: Высокое", "Дней без %: 21"],
-      image: "https://cdn.poehali.dev/files/3143a8ba-e976-4e9c-948b-b8305275162d.png"
+      image: "https://cdn.poehali.dev/files/3143a8ba-e976-4e9c-948b-b8305275162d.png",
+      link: "https://clck.ru/3R9MC6"
     },
     {
       name: "Lime-zaim",
