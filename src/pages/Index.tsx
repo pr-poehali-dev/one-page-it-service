@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import Petals from "@/components/Petals";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -87,6 +88,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
+      <Petals />
       {/* Background Decorative Icons */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.02] z-0">
         <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
@@ -101,11 +103,7 @@ const Index = () => {
       
       {/* Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-        <div className="absolute top-0 left-0 right-0 h-2 overflow-hidden">
-          <div className="christmas-lights-container">
-            <div className="christmas-lights"></div>
-          </div>
-        </div>
+        <div className="absolute top-0 left-0 right-0 h-1 spring-header-line" />
         <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary flex items-center justify-center text-xl md:text-2xl font-bold text-primary-foreground">
@@ -121,11 +119,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden py-16 px-4 md:py-32 md:px-6 mt-16 md:mt-20 pb-20 md:pb-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-background to-background" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[150px] bg-red-700/30" />
-        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-orange-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
-        <div className="absolute top-20 right-1/4 w-[300px] h-[300px] bg-yellow-500/5 rounded-full blur-2xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-400/10 via-background to-background" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-pink-300/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[150px] bg-green-400/10" />
+        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-rose-300/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+        <div className="absolute top-20 right-1/4 w-[300px] h-[300px] bg-lime-400/8 rounded-full blur-2xl" />
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center space-y-6 animate-fade-in">

@@ -58,6 +58,25 @@
   }
 }
 
+/* === ВЕСЕННИЙ СТИЛЬ === */
+
+.spring-header-line {
+  background: linear-gradient(90deg, #f9a8d4, #86efac, #fde68a, #f9a8d4);
+  background-size: 200% 100%;
+  animation: spring-line-flow 4s linear infinite;
+}
+
+@keyframes spring-line-flow {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* === КОНЕЦ ВЕСЕННЕГО СТИЛЯ === */
+
 @layer utilities {
   @keyframes gradient {
     0%,
