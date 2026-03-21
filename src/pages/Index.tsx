@@ -90,7 +90,48 @@ const Index = () => {
     <div className="min-h-screen bg-background relative overflow-hidden">
       <Petals />
       {/* Spring Flowers Background */}
-      <div className="fixed inset-0 pointer-events-none z-0 spring-flowers-bg" />
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        {[
+          { x: 8, y: 12, size: 38, rotate: 0 },
+          { x: 78, y: 7, size: 30, rotate: 25 },
+          { x: 22, y: 55, size: 34, rotate: 15 },
+          { x: 60, y: 38, size: 26, rotate: 40 },
+          { x: 45, y: 82, size: 32, rotate: 10 },
+          { x: 88, y: 65, size: 28, rotate: 55 },
+          { x: 35, y: 22, size: 24, rotate: 30 },
+          { x: 92, y: 30, size: 22, rotate: 5 },
+          { x: 15, y: 80, size: 28, rotate: 20 },
+          { x: 68, y: 72, size: 30, rotate: 45 },
+        ].map((f, i) => (
+          <svg
+            key={i}
+            style={{
+              position: "absolute",
+              left: `${f.x}%`,
+              top: `${f.y}%`,
+              width: f.size,
+              height: f.size,
+              transform: `translate(-50%, -50%) rotate(${f.rotate}deg)`,
+              opacity: 0.18,
+            }}
+            viewBox="-50 -50 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {[0, 60, 120, 180, 240, 300].map((angle) => (
+              <ellipse
+                key={angle}
+                cx={Math.cos((angle * Math.PI) / 180) * 22}
+                cy={Math.sin((angle * Math.PI) / 180) * 22}
+                rx={13}
+                ry={20}
+                transform={`rotate(${angle}, ${Math.cos((angle * Math.PI) / 180) * 22}, ${Math.sin((angle * Math.PI) / 180) * 22})`}
+                fill="#ff9ab5"
+              />
+            ))}
+            <circle cx={0} cy={0} r={10} fill="#ffd6e7" />
+          </svg>
+        ))}
+      </div>
       {/* Background Decorative Icons */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.02] z-0">
         <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
