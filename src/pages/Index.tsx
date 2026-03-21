@@ -89,6 +89,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       <Petals />
+      {/* Spring Flowers Background */}
+      <div className="fixed inset-0 pointer-events-none z-0 spring-flowers-bg" />
       {/* Background Decorative Icons */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.02] z-0">
         <Icon name="DollarSign" size={120} className="absolute top-20 left-10 text-primary rotate-12" />
@@ -103,7 +105,6 @@ const Index = () => {
       
       {/* Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-        <div className="absolute top-0 left-0 right-0 h-1 spring-header-line" />
         <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary flex items-center justify-center text-xl md:text-2xl font-bold text-primary-foreground">
