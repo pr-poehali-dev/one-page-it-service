@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Petals from "@/components/Petals";
+import SummerSparkles from "@/components/SummerSparkles";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -88,7 +88,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <Petals />
+      <SummerSparkles />
       {/* Spring Flowers Background */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         {[
